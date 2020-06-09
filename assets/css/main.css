@@ -1045,7 +1045,6 @@ input[type="submit"], input[type="reset"], input[type="button"], button {
 	-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 	transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 	background-image: url("../../images/bg.jpg");
-	background: url("../../images/bg.mp4");
 	background-position: center;
 	background-size: cover;
  
