@@ -1,0 +1,628 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Happy New Year 2021</title><style>
+    /* webkit printing magic: print all background colors */
+    html {
+        -webkit-print-color-adjust: exact;
+    }
+    * {
+        box-sizing: border-box;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    @media only screen {
+        body {
+            margin: 2em auto;
+            max-width: 900px;
+            color: rgb(55, 53, 47);
+        }
+    }
+    
+    body {
+        line-height: 1.5;
+        white-space: pre-wrap;
+    }
+    
+    a,
+    a.visited {
+        color: inherit;
+        text-decoration: underline;
+    }
+    
+    .pdf-relative-link-path {
+        font-size: 80%;
+        color: #444;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .page-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0.75em;
+    }
+    
+    h1 {
+        font-size: 1.875rem;
+        margin-top: 1.875rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    
+    .source {
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        padding: 1.5em;
+        word-break: break-all;
+    }
+    
+    .callout {
+        border-radius: 3px;
+        padding: 1rem;
+    }
+    
+    figure {
+        margin: 1.25em 0;
+        page-break-inside: avoid;
+    }
+    
+    figcaption {
+        opacity: 0.5;
+        font-size: 85%;
+        margin-top: 0.5em;
+    }
+    
+    mark {
+        background-color: transparent;
+    }
+    
+    .indented {
+        padding-left: 1.5em;
+    }
+    
+    hr {
+        background: transparent;
+        display: block;
+        width: 100%;
+        height: 1px;
+        visibility: visible;
+        border: none;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    @media only print {
+        img {
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    }
+    
+    @page {
+        margin: 1in;
+    }
+    
+    .collection-content {
+        font-size: 0.875rem;
+    }
+    
+    .column-list {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .column {
+        padding: 0 1em;
+    }
+    
+    .column:first-child {
+        padding-left: 0;
+    }
+    
+    .column:last-child {
+        padding-right: 0;
+    }
+    
+    .table_of_contents-item {
+        display: block;
+        font-size: 0.875rem;
+        line-height: 1.3;
+        padding: 0.125rem;
+    }
+    
+    .table_of_contents-indent-1 {
+        margin-left: 1.5rem;
+    }
+    
+    .table_of_contents-indent-2 {
+        margin-left: 3rem;
+    }
+    
+    .table_of_contents-indent-3 {
+        margin-left: 4.5rem;
+    }
+    
+    .table_of_contents-link {
+        text-decoration: none;
+        opacity: 0.7;
+        border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+    }
+    
+    table,
+    th,
+    td {
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-collapse: collapse;
+    }
+    
+    table {
+        border-left: none;
+        border-right: none;
+    }
+    
+    th,
+    td {
+        font-weight: normal;
+        padding: 0.25em 0.5em;
+        line-height: 1.5;
+        min-height: 1.5em;
+        text-align: left;
+    }
+    
+    th {
+        color: rgba(55, 53, 47, 0.6);
+    }
+    
+    ol,
+    ul {
+        margin: 0;
+        margin-block-start: 0.6em;
+        margin-block-end: 0.6em;
+    }
+    
+    li > ol:first-child,
+    li > ul:first-child {
+        margin-block-start: 0.6em;
+    }
+    
+    ul > li {
+        list-style: disc;
+    }
+    
+    ul.to-do-list {
+        text-indent: -1.7em;
+    }
+    
+    ul.to-do-list > li {
+        list-style: none;
+    }
+    
+    .to-do-children-checked {
+        text-decoration: line-through;
+        opacity: 0.375;
+    }
+    
+    ul.toggle > li {
+        list-style: none;
+    }
+    
+    ul {
+        padding-inline-start: 1.7em;
+    }
+    
+    ul > li {
+        padding-left: 0.1em;
+    }
+    
+    ol {
+        padding-inline-start: 1.6em;
+    }
+    
+    ol > li {
+        padding-left: 0.2em;
+    }
+    
+    .mono ol {
+        padding-inline-start: 2em;
+    }
+    
+    .mono ol > li {
+        text-indent: -0.4em;
+    }
+    
+    .toggle {
+        padding-inline-start: 0em;
+        list-style-type: none;
+    }
+    
+    /* Indent toggle children */
+    .toggle > li > details {
+        padding-left: 1.7em;
+    }
+    
+    .toggle > li > details > summary {
+        margin-left: -1.1em;
+    }
+    
+    .selected-value {
+        display: inline-block;
+        padding: 0 0.5em;
+        background: rgba(206, 205, 202, 0.5);
+        border-radius: 3px;
+        margin-right: 0.5em;
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        white-space: nowrap;
+    }
+    
+    .collection-title {
+        display: inline-block;
+        margin-right: 1em;
+    }
+    
+    time {
+        opacity: 0.5;
+    }
+    
+    .icon {
+        display: inline-block;
+        max-width: 1.2em;
+        max-height: 1.2em;
+        text-decoration: none;
+        vertical-align: text-bottom;
+        margin-right: 0.5em;
+    }
+    
+    img.icon {
+        border-radius: 3px;
+    }
+    
+    .user-icon {
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 100%;
+        margin-right: 0.5rem;
+    }
+    
+    .user-icon-inner {
+        font-size: 0.8em;
+    }
+    
+    .text-icon {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    
+    .page-cover-image {
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 30vh;
+    }
+    
+    .page-header-icon {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .page-header-icon-with-cover {
+        margin-top: -0.72em;
+        margin-left: 0.07em;
+    }
+    
+    .page-header-icon img {
+        border-radius: 3px;
+    }
+    
+    .link-to-page {
+        margin: 1em 0;
+        padding: 0;
+        border: none;
+        font-weight: 500;
+    }
+    
+    p > .user {
+        opacity: 0.5;
+    }
+    
+    td > .user,
+    td > time {
+        white-space: nowrap;
+    }
+    
+    input[type="checkbox"] {
+        transform: scale(1.5);
+        margin-right: 0.6em;
+        vertical-align: middle;
+    }
+    
+    p {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    .image {
+        border: none;
+        margin: 1.5em 0;
+        padding: 0;
+        border-radius: 0;
+        text-align: center;
+    }
+    
+    .code,
+    code {
+        background: rgba(135, 131, 120, 0.15);
+        border-radius: 3px;
+        padding: 0.2em 0.4em;
+        border-radius: 3px;
+        font-size: 85%;
+        tab-size: 2;
+    }
+    
+    code {
+        color: #eb5757;
+    }
+    
+    .code {
+        padding: 1.5em 1em;
+    }
+    
+    .code-wrap {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+    
+    .code > code {
+        background: none;
+        padding: 0;
+        font-size: 100%;
+        color: inherit;
+    }
+    
+    blockquote {
+        font-size: 1.25em;
+        margin: 1em 0;
+        padding-left: 1em;
+        border-left: 3px solid rgb(55, 53, 47);
+    }
+    
+    .bookmark {
+        text-decoration: none;
+        max-height: 8em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+    }
+    
+    .bookmark-title {
+        font-size: 0.85em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: 1.75em;
+        white-space: nowrap;
+    }
+    
+    .bookmark-text {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bookmark-info {
+        flex: 4 1 180px;
+        padding: 12px 14px 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .bookmark-image {
+        width: 33%;
+        flex: 1 1 180px;
+        display: block;
+        position: relative;
+        object-fit: cover;
+        border-radius: 1px;
+    }
+    
+    .bookmark-description {
+        color: rgba(55, 53, 47, 0.6);
+        font-size: 0.75em;
+        overflow: hidden;
+        max-height: 4.5em;
+        word-break: break-word;
+    }
+    
+    .bookmark-href {
+        font-size: 0.75em;
+        margin-top: 0.25em;
+    }
+    
+    .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+    .code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+    .serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+    .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+    .pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+    
+    .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+    
+    .pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+    
+    .pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+    
+    .highlight-default {
+    }
+    .highlight-gray {
+        color: rgb(155,154,151);
+    }
+    .highlight-brown {
+        color: rgb(100,71,58);
+    }
+    .highlight-orange {
+        color: rgb(217,115,13);
+    }
+    .highlight-yellow {
+        color: rgb(223,171,1);
+    }
+    .highlight-teal {
+        color: rgb(15,123,108);
+    }
+    .highlight-blue {
+        color: rgb(11,110,153);
+    }
+    .highlight-purple {
+        color: rgb(105,64,165);
+    }
+    .highlight-pink {
+        color: rgb(173,26,114);
+    }
+    .highlight-red {
+        color: rgb(224,62,62);
+    }
+    .highlight-gray_background {
+        background: rgb(235,236,237);
+    }
+    .highlight-brown_background {
+        background: rgb(233,229,227);
+    }
+    .highlight-orange_background {
+        background: rgb(250,235,221);
+    }
+    .highlight-yellow_background {
+        background: rgb(251,243,219);
+    }
+    .highlight-teal_background {
+        background: rgb(221,237,234);
+    }
+    .highlight-blue_background {
+        background: rgb(221,235,241);
+    }
+    .highlight-purple_background {
+        background: rgb(234,228,242);
+    }
+    .highlight-pink_background {
+        background: rgb(244,223,235);
+    }
+    .highlight-red_background {
+        background: rgb(251,228,228);
+    }
+    .block-color-default {
+        color: inherit;
+        fill: inherit;
+    }
+    .block-color-gray {
+        color: rgba(55, 53, 47, 0.6);
+        fill: rgba(55, 53, 47, 0.6);
+    }
+    .block-color-brown {
+        color: rgb(100,71,58);
+        fill: rgb(100,71,58);
+    }
+    .block-color-orange {
+        color: rgb(217,115,13);
+        fill: rgb(217,115,13);
+    }
+    .block-color-yellow {
+        color: rgb(223,171,1);
+        fill: rgb(223,171,1);
+    }
+    .block-color-teal {
+        color: rgb(15,123,108);
+        fill: rgb(15,123,108);
+    }
+    .block-color-blue {
+        color: rgb(11,110,153);
+        fill: rgb(11,110,153);
+    }
+    .block-color-purple {
+        color: rgb(105,64,165);
+        fill: rgb(105,64,165);
+    }
+    .block-color-pink {
+        color: rgb(173,26,114);
+        fill: rgb(173,26,114);
+    }
+    .block-color-red {
+        color: rgb(224,62,62);
+        fill: rgb(224,62,62);
+    }
+    .block-color-gray_background {
+        background: rgb(235,236,237);
+    }
+    .block-color-brown_background {
+        background: rgb(233,229,227);
+    }
+    .block-color-orange_background {
+        background: rgb(250,235,221);
+    }
+    .block-color-yellow_background {
+        background: rgb(251,243,219);
+    }
+    .block-color-teal_background {
+        background: rgb(221,237,234);
+    }
+    .block-color-blue_background {
+        background: rgb(221,235,241);
+    }
+    .block-color-purple_background {
+        background: rgb(234,228,242);
+    }
+    .block-color-pink_background {
+        background: rgb(244,223,235);
+    }
+    .block-color-red_background {
+        background: rgb(251,228,228);
+    }
+    .select-value-color-default { background-color: rgba(206,205,202,0.5); }
+    .select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+    .select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+    .select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+    .select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+    .select-value-color-green { background-color: rgba(0,135,107,0.2); }
+    .select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+    .select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+    .select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+    .select-value-color-red { background-color: rgba(255,0,26,0.2); }
+    
+    .checkbox {
+        display: inline-flex;
+        vertical-align: text-bottom;
+        width: 16;
+        height: 16;
+        background-size: 16px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+    
+    .checkbox-on {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+    
+    .checkbox-off {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+    }
+        
+    </style></head><body><article id="7fb228ab-7a71-42bc-ae1b-d5a4e3958907" class="page sans"><header><h1 class="page-title">Happy New Year 2021</h1></header><div class="page-body"><h3 id="3089353d-61a1-4481-a91d-b7d5e4f8a907" class="">Small Gift(s) from my side </h3><h1 id="30115e7d-bbeb-4fe1-b206-9ea9d08775ae" class="block-color-yellow_background">Awesome Collection Of Useful Websites ⭐</h1><h3 id="d833aa43-7c0f-40ef-aa68-095a66b2cd6d" class="">Interesting sites:</h3><ul id="774dba07-9db4-40b9-a693-bc5e8e7124a9" class="bulleted-list"><li><a href="https://the-eye.eu/public">the-eye.eu/public</a> - An archive of random files.</li></ul><ul id="3590facb-699c-4047-a183-c4fe275cbe97" class="bulleted-list"><li><a href="https://ncase.me/">ncase.me</a> - Cool educational browser games.</li></ul><ul id="3333a1e7-0b6b-4538-bcc8-bd0c4e74de5c" class="bulleted-list"><li><a href="https://aidn.jp/contents">aidn.jp/contents</a> - Weeb music minigames from the creator of nyan cat.</li></ul><ul id="1a729283-9744-4235-b1f6-f6297ee9e289" class="bulleted-list"><li><a href="https://www.teamblind.com/">teamblind.com</a> - Kind of like reddit but focused on careers, the tech industry, software engineering, finance, etc.</li></ul><ul id="fbe883b6-7225-405b-99b0-27c2914d2d9e" class="bulleted-list"><li><a href="http://radio.garden/">radio.garden</a> - Radio station overlayed on earth.</li></ul><ul id="51b366bf-777f-4b34-8d8e-75b76f00e4b5" class="bulleted-list"><li><a href="https://stallman.org/">stallman.org</a> - Scholars are yet to determine the meaning of this website.</li></ul><ul id="b2a86e4e-6857-4382-b0f3-71814ce4e122" class="bulleted-list"><li><a href="https://rammb-slider.cira.colostate.edu/">rammb-slider.cira.colostate.edu</a> - Live weather satellite viewer from GOES-16 &amp; 17, Meteosat 8 &amp; 11, Himawari-8 and JPSS.</li></ul><ul id="ec852457-7386-4c1a-a43b-daad5d15772f" class="bulleted-list"><li><a href="https://darksitefinder.com/maps/world.html">darksitefinder.com/maps/world.html</a> - Map of light pollution, for stargazers.</li></ul><ul id="ddf7492d-5133-4c19-bbd7-8655cb7541fe" class="bulleted-list"><li><a href="http://www.websdr.org/">websdr.org</a> - Receivers of Frequencies in various locations here, you can listen to airplanes, to police radios, to various satellites.</li></ul><ul id="abbd23f6-efd6-491c-a564-39dfc2cd2552" class="bulleted-list"><li><a href="https://betterexplained.com/">betterexplained.com</a> - Clear, intuitive lessons about imaginary numbers, exponents, and more.</li></ul><ul id="dc9a09da-c554-4201-8fed-d7c82ae3a8c4" class="bulleted-list"><li><a href="http://rx.linkfanel.net/">rx.linkfanel.net</a> - A map applied to a shit ton of user run HF receivers.</li></ul><ul id="00f9c24e-d2dc-4d55-9aea-357c0e0e6490" class="bulleted-list"><li><a href="https://onehack.us/">onehack.us</a> - Piracy, Exploits and stuff.</li></ul><ul id="3c9305ab-e074-4ff1-9686-5783160f1e25" class="bulleted-list"><li><a href="https://www.futuretimeline.net/index.htm">futuretimeline.net/index.htm</a> - Some kind of doomer future prediction site.</li></ul><ul id="495962d8-675f-48b5-bd94-de99fbf5cdc5" class="bulleted-list"><li><a href="http://planecrashinfo.com/lastwords.htm">planecrashinfo.com/lastwords.htm</a> - Pretty much explained in the url, warning: sad.</li></ul><ul id="b519c04c-e773-418d-9d82-2c09734874b0" class="bulleted-list"><li><a href="https://wiby.me/">wiby.me</a> - A search engine for older style pages.</li></ul><ul id="966fae89-c650-4b14-91c6-47e4a1450867" class="bulleted-list"><li><a href="https://www.nintendo.co.jp/n01/index.html">nintendo.co.jp/n01/index.html</a> - Old nintendo 64 game websites.</li></ul><ul id="f0d3c86f-44aa-4635-866d-67bc1f7f3b07" class="bulleted-list"><li><a href="http://www.filldisk.com/">filldisk.com</a> - Fill your hardrive with cats</li></ul><ul id="724d55db-4edb-455d-a901-09b9db93973b" class="bulleted-list"><li><a href="http://www.opentopia.com/">opentopia.com</a> - Random open webcams</li></ul><ul id="c0566384-8e1b-43f2-84ac-6b4f4129166c" class="bulleted-list"><li><a href="https://petittube.com/">petittube.com</a> - Random Youtube videos with less than 10 views</li></ul><ul id="f73af781-493e-4caa-9a10-9d5e4538438b" class="bulleted-list"><li><a href="http://info.cern.ch/">info.cern.ch</a> - The first ever website.</li></ul><ul id="a853b1a1-33f8-4f0d-9118-5cbd47ab3721" class="bulleted-list"><li><a href="http://notpron.org/notpron">notpron.org/notpron</a> - A riddle site.</li></ul><ul id="4c2c7409-099e-4325-98f1-98da1156c23e" class="bulleted-list"><li><a href="http://www.exitmundi.nl/exitmundi.htm">exitmundi.nl/exitmundi.htm</a> - Dooms day scenarios</li></ul><ul id="affdaefd-c986-4404-852b-7757e0dc95bc" class="bulleted-list"><li><a href="https://www.trendsmap.com/">trendsmap.com</a> - Twitter trends on map</li></ul><ul id="1b77e8c8-d52c-4535-9268-ad0a8762cd97" class="bulleted-list"><li><a href="https://www.hp9845.net/9845/software/screenart/9845cdemo">hp9845.net/9845/software/screenart/9845cdemo</a> - Gallery of screen art with an HP 9845C</li></ul><ul id="91bc9f3a-f539-44e8-a574-3df3cd3c7a6b" class="bulleted-list"><li><a href="https://www.suppermariobroth.com/">suppermariobroth.com</a> - Contains lots of niche and obscure content from the Super Mario Bros. franchise</li></ul><ul id="113df220-96d9-4193-a403-8e204a332e67" class="bulleted-list"><li><a href="https://noclip.website/">noclip.website</a> - Use only with a reliable GPU. You can load up maps from various 3D games and roam around them on your browser.</li></ul><ul id="183a4e09-36c3-4f75-9e85-e9d98f089778" class="bulleted-list"><li><a href="https://www.pidgi.net/wiki/Special:NewFiles">pidgi.net/wiki/Special:NewFiles</a> - Official artwork in their source size, generally for Nintendo releases.</li></ul><ul id="750517d1-539b-470c-afd9-c55090406761" class="bulleted-list"><li><a href="https://worldbirthsanddeaths.com/">worldbirthsanddeaths.com</a> - Births and deaths simulator.</li></ul><ul id="8f168f64-d197-4b57-9a58-12c31eafe7a1" class="bulleted-list"><li><a href="https://defensivecomputingchecklist.com/">defensivecomputingchecklist.com</a> - great site for good security habits.</li></ul><ul id="a4129825-3d55-4181-8e83-d71299b66d87" class="bulleted-list"><li><a href="https://bibliogram.art/">bibliogram.art</a> - A better way to view IG profiles.</li></ul><ul id="092c1705-8458-492d-8823-5c05ac6c61ac" class="bulleted-list"><li><a href="http://cat-v.org/">cat-v.org</a> - anti-culture technology community</li></ul><ul id="1dee104e-dd47-4f2d-997d-1be0a75f5d14" class="bulleted-list"><li><a href="https://timecube.2enp.com/">timecube.2enp.com</a> - novelty site backup</li></ul><ul id="a7e64776-33d5-4e89-aa36-7c288f1cb092" class="bulleted-list"><li><a href="https://www.notechmagazine.com/">notechmagazine.com</a> - making “low” technology better</li></ul><ul id="ad13cadc-7aaa-4f84-86da-fe8e633bd8c8" class="bulleted-list"><li><a href="http://tokyo-ga.org/">tokyo-ga.org</a> - cool photography site</li></ul><ul id="60cef0bf-34b3-4b2d-ab6f-8b69a1a0a4eb" class="bulleted-list"><li><a href="https://www.metafilter.com/">metafilter.com</a> - A sort of shared blog / news site</li></ul><ul id="3b93fecc-e72f-41a1-9060-a649b88dc03e" class="bulleted-list"><li><a href="https://unspokencinema.blogspot.com/">unspokencinema.blogspot.com</a> - blog about Contemporary Contemplative Cinema</li></ul><ul id="31f18146-f517-441a-83ae-80970c5f50dd" class="bulleted-list"><li><a href="https://ourworldindata.org/">ourworldindata.org</a> - objective viewpoints on world change</li></ul><ul id="07ff12cd-9439-4d13-bc9e-b0d271a37951" class="bulleted-list"><li><a href="https://jacobitemag.com/">jacobitemag.com</a> - contemporary culture discussion</li></ul><ul id="7b432bb0-a802-4f10-a632-86813e1bbb6d" class="bulleted-list"><li><a href="https://hedgehogreview.com/">hedgehogreview.com</a> - contemporary culture discussion</li></ul><ul id="4c054d72-ebbb-442f-a9a7-3bb2f169d64a" class="bulleted-list"><li><a href="https://metamoderna.org/">metamoderna.org</a> - contemporary culture discussion</li></ul><ul id="464d87ca-8d36-49e2-97f1-c155b7e78be5" class="bulleted-list"><li><a href="https://publicdomainreview.org/">publicdomainreview.org</a> - contemporary culture discussion</li></ul><ul id="b45944c3-3075-4b75-a312-ef461ca01703" class="bulleted-list"><li><a href="https://degrowth.org/">degrowth.org</a> - reversing the damage we do to our world</li></ul><ul id="638f2f61-fa56-492a-92a6-fb166d8f6fce" class="bulleted-list"><li><a href="https://en.m.wikipedia.org/wiki/Portal:Current_events">en.m.wikipedia.org/wiki/Portal:Current_events</a> - Documents timeline of world events all the way back from the 20th century</li></ul><ul id="e4e745aa-e43d-4aa9-81c2-47caa4bcc277" class="bulleted-list"><li><a href="https://usemumble.neocities.org/">usemumble.neocities.org</a> - Why mumble is a Chad and Discord is a virgin.</li></ul><ul id="0f453ec6-c75c-4f66-bfc1-69800ef81166" class="bulleted-list"><li><a href="https://spyware.neocities.org/">spyware.neocities.org</a> - About how and why various things are or aren’t spyware.</li></ul><ul id="8caa3922-3123-4352-a052-cd21c9c4c326" class="bulleted-list"><li><a href="https://digdeeper.neocities.org/">digdeeper.neocities.org</a> - Seems like Anon’s blog, if he wants a better explaination he can provide a description.</li></ul><ul id="2f6d0977-f88d-4c2c-8ef1-6df04ea6a9e8" class="bulleted-list"><li><a href="https://libraryofbabel.info/">libraryofbabel.info</a> - The library of babel</li></ul><ul id="309c9d25-ab4c-4f36-aae4-1c9f2de065e1" class="bulleted-list"><li><a href="http://babelia.libraryofbabel.info/">babelia.libraryofbabel.info</a> - Babel image archives</li></ul><ul id="52a08946-3c1b-4b34-88e1-8ef424536ed2" class="bulleted-list"><li><a href="https://www.abelard.org/choose/choose.htm">abelard.org/choose/choose.htm</a> - something about some mythical thing in Mongolia.</li></ul><ul id="c2bb608c-9c31-4acf-9eb5-3c9a8a50749e" class="bulleted-list"><li><a href="https://greaterwrong.com/">greaterwrong.com</a> - Posts about how to think.</li></ul><ul id="f7809179-bc7d-4f4d-ab78-e0eaa1c5a6d9" class="bulleted-list"><li><a href="https://www.singularity2050.com/2010/01/the-misandry-bubble.html">singularity2050.com/2010/01/the-misandry-bubble.html</a> - The Misandry Bubble (posted in 2010)</li></ul><ul id="5e543658-7bf5-41ee-b28e-9419787bfc9e" class="bulleted-list"><li><a href="https://resobscura.blogspot.com/">resobscura.blogspot.com</a> - Catalog of obscure things.</li></ul><ul id="c4d38980-e2f0-466e-801c-3aff9c1694fc" class="bulleted-list"><li><a href="https://lobste.rs/">lobste.rs</a> - Lobsters is a computing-focused community centered around link aggregation and discussion.</li></ul><ul id="5c018e38-36e1-4395-a319-2469e44682e0" class="bulleted-list"><li><a href="http://survivorbb.rapeutation.com/">survivorbb.rapeutation.com</a> - Big archive of books/documents hosted on a phpBB forum</li></ul><ul id="4b99700a-9bc5-4036-a93a-3df105ec7f19" class="bulleted-list"><li><a href="https://cubertown.neocities.org/">cubertown.neocities.org</a> - A rabbithole of its own kind. Filled with strange imagery and hatred of consumerism, cool looking though.</li></ul><ul id="4aa0d8dd-2754-495e-83d7-76a8b3fea4f5" class="bulleted-list"><li><a href="https://town.neocities.org/">town.neocities.org</a> - just a little walk through a town at night, really neat use of JSS.</li></ul><ul id="d989278e-71d7-4ab2-a8bb-d7a190552985" class="bulleted-list"><li><a href="https://track044.neocities.org/">track044.neocities.org</a> - some sort of photographer’s personal site, really a wip but cool aesthetic.</li></ul><ul id="c193a940-fff1-404b-b0e8-2d99a2bbefe8" class="bulleted-list"><li><a href="https://dunkleshreken-at-work.neocities.org/">dunkleshreken-at-work.neocities.org</a> - an artist portfolio site with some cool hidden links and pages, seems to be under-construction still.</li></ul><ul id="8e39e786-7ebf-4403-90a4-67b8a887bb64" class="bulleted-list"><li><a href="https://www.ghacks.net/">ghacks.net</a> - A tech blog that reviews software, apps and offers tips and tricks about Windows, Android, and other systems.</li></ul><ul id="2c69f384-246f-4b8c-9ba7-014f8b109291" class="bulleted-list"><li><a href="https://whereareyou.neocities.org/">whereareyou.neocities.org</a> - seems to just be a cryptic website for an artist, pretty cool looking though.</li></ul><ul id="3680e2be-47a1-4311-8869-ebce7f29d8b2" class="bulleted-list"><li><a href="https://2bit.neocities.org/">2bit.neocities.org</a> - a super aesthetic site dedicated to retro-gaming and gameboy related stuff.</li></ul><ul id="a62a4273-1bb3-4698-8422-38fccfbd4dcb" class="bulleted-list"><li><a href="http://sullla.com/">sullla.com</a> - A bunch of experimental autism with some older vidya.</li></ul><ul id="7d412fb5-ad75-49af-8453-c90475558dec" class="bulleted-list"><li><a href="http://www.jezzamon.com/fourier/index.html">jezzamon.com/fourier/index.html</a> - Fourier Transforms</li></ul><ul id="59f0691f-df55-4607-916e-1ec8f88a851a" class="bulleted-list"><li><a href="http://calresco.org/">calresco.org/</a> - The Complexity &amp; Artificial Life Research Concept (90s complexity stuff)</li></ul><ul id="e9788d1b-b4e3-4e85-b890-fba3c05b343f" class="bulleted-list"><li><a href="http://pespmc1.vub.ac.be/">pespmc1.vub.ac.be/</a> - Principia Cybernetica Web (90s system theory stuff)</li></ul><ul id="7ac35643-ad05-4f60-8334-3360fbdfa99c" class="bulleted-list"><li><a href="https://www.bfro.net/">bfro.net/</a> - Bigfoot Field Researchers Organization</li></ul><ul id="cc65dd43-1c34-43d0-a20a-b004dbd1a0b1" class="bulleted-list"><li><a href="http://www.certifiedsoftness.com/">certifiedsoftness.com/</a> - Certified Softness Measurement</li></ul><ul id="6458c841-a038-4ea0-9800-95921480b8c1" class="bulleted-list"><li><a href="http://daggermag.com/">daggermag.com/</a> - Dagger Magazine</li></ul><ul id="4744a8ec-39f1-4d1c-bb69-261b1ea800fe" class="bulleted-list"><li><a href="http://hw-museum.cz/">hw-museum.cz/</a> - Hardware Museum</li></ul><ul id="a5506d04-9068-4d23-b93e-fe5f067017c5" class="bulleted-list"><li><a href="http://open-std.org/">open-std.org/</a> - Open Standards</li></ul><ul id="a919706c-5137-4c1d-a994-59aa82659e91" class="bulleted-list"><li><a href="http://progopedia.com/">progopedia.com/</a> - Progopedia</li></ul><ul id="40b41204-ab68-4a63-bd57-0ea7c60aa141" class="bulleted-list"><li><a href="http://helloworldcollection.de/">helloworldcollection.de/</a> - The Hello World Collection</li></ul><ul id="84b163fc-1033-40e7-b875-d5f87d9c7171" class="bulleted-list"><li><a href="https://1mb.club/">1mb.club/</a> - sites less than 1mb</li></ul><ul id="6c97ac78-396a-40e3-a26e-3cf8f0a07c35" class="bulleted-list"><li><a href="http://tilde.club/">tilde.club/</a> - tilde club</li></ul><ul id="ad73ef1b-33d3-4e34-b215-343ef113fe91" class="bulleted-list"><li><a href="https://soda.privatevoid.net/num/lists/web/">soda.privatevoid.net/num/lists/web/</a> - a cool link list</li></ul><ul id="f2fc56f5-7bad-4766-8210-2f0e412816fc" class="bulleted-list"><li><a href="https://peelopaalu.neocities.org/">peelopaalu.neocities.org/</a> - the best link list</li></ul><ul id="374789de-e7da-4bb8-98ec-407f76ab0533" class="bulleted-list"><li><a href="https://www.vidarholen.net/contents/wordcount/">vidarholen.net/contents/wordcount/</a> - counts and graphs various kinds of words found within the source of the linux kernel</li></ul><ul id="71917a47-7210-451f-bc80-a78994f63f47" class="bulleted-list"><li><a href="https://lolwut.neocities.org/">lolwut.neocities.org/</a> - oldschool anon’s blog</li></ul><ul id="be0659b5-049b-4d84-ae28-66c97ed87725" class="bulleted-list"><li><a href="http://www.deceptionisland.aq/">deceptionisland.aq/</a> - an island with an active volcano in the middle that doesn’t look like it has one</li></ul><ul id="839ca39b-2a84-414e-9aa2-e931a8ace34c" class="bulleted-list"><li><a href="http://www.hessdalen.org/index_e.shtml">hessdalen.org/index_e.shtml</a> - a town in norway that keeps seeing lights in the sky that frequently it decided to document them</li></ul><ul id="af179e4f-7ddd-4ba3-b965-b57a31cec07e" class="bulleted-list"><li><a href="http://n-gate.com/">n-gate.com/</a> - webshit weekly of “hacker” “news”</li></ul><ul id="8dea529e-68d5-4aed-8485-c1d516a7ccd0" class="bulleted-list"><li><a href="http://www.wall.org/~larry/">wall.org/~larry/</a> - the page of Larry Wall, the guy behind the Perl programming language</li></ul><ul id="6ab5c54f-ef1c-485d-aff9-011d5cf375a3" class="bulleted-list"><li><a href="https://beneathvt.com/">beneathvt.com/</a> - virginia tech’s steam tunnels</li></ul><ul id="a7dc01ba-e287-4ac1-8fbd-8f5662270c46" class="bulleted-list"><li><a href="https://tools.ietf.org/html/rfc1855">tools.ietf.org/html/rfc1855</a> - a set of guidelines made in 1995 on how to behave in a conversation on the internet</li></ul><ul id="33a163ea-8933-4037-b5ef-96b97a59df7e" class="bulleted-list"><li><a href="https://awesomekling.github.io/">awesomekling.github.io/</a> - the blog of Andreas Kling, the dude behind <a href="https://github.com/SerenityOS/serenity">SerenityOS</a></li></ul><ul id="0766bf7e-fb7c-4947-a0e0-07a7d6ec58c6" class="bulleted-list"><li><a href="https://int10h.org/oldschool-pc-fonts/">int10h.org/oldschool-pc-fonts/</a> - old PC fonts</li></ul><ul id="1b25b55e-a983-48c2-a3a1-1905b966793e" class="bulleted-list"><li><a href="http://wttr.in/">wttr.in/</a> - terminal weather</li></ul><ul id="406a4d0b-21c6-4712-b350-6e1d1dcdfcbd" class="bulleted-list"><li><a href="https://geocities.restorativland.org/">geocities.restorativland.org/</a> - the gallery of geocities sites</li></ul><ul id="e11e33c7-1596-4c64-88df-b6f456b22f48" class="bulleted-list"><li><a href="https://stumblingon.com/">stumblingon.com/</a> - StumblingOn shows you a random webpage whenever you click the STUMBLE button.</li></ul><ul id="f38d7c4b-e9d7-4890-aace-e8964e9b6e34" class="bulleted-list"><li><a href="https://collections.royalarmouries.org/">collections.royalarmouries.org/</a> - something about armour</li></ul><ul id="ea31124b-e0ee-49dc-982e-04b31e9ab514" class="bulleted-list"><li><a href="https://web.archive.org/web/20170823090710/http://www.rotten.com/library/culture/banned-cartoons/">web.archive.org/web/20170823090710/http://www.rotten.com/library/culture/banned-cartoons/</a> - Banned Cartoons</li></ul><ul id="853b0ba5-6048-4a9d-9b60-52c1a310291f" class="bulleted-list"><li><a href="https://web.archive.org/web/20170829074032/rotten.com/library">web.archive.org/web/20170829074032/rotten.com/library</a> - The Rotten Library (archived)</li></ul><ul id="2fa8c931-a7c0-4e8b-988f-98d320653491" class="bulleted-list"><li><a href="http://www.classreal.com/shorts.php">classreal.com/shorts.php</a> - list of shorts and movies one would call a “mindfuck”</li></ul><ul id="16491b9d-d6d5-4389-b072-97f937dc399a" class="bulleted-list"><li><a href="http://zoomquilt.org/">zoomquilt.org/</a> - infinitely zooming painting</li></ul><ul id="0e9add93-0e29-4095-aea2-80c3832a9ac2" class="bulleted-list"><li><a href="http://zoomquilt2.com/">zoomquilt2.com/</a> - another infinite painting</li></ul><ul id="e5a61659-f41c-456f-83d6-56491e379e50" class="bulleted-list"><li><a href="https://www.wordseye.com/">wordseye.com/</a> - 1000 words is a picture</li></ul><ul id="8e550f3d-4088-40ef-9bb7-dc3a46a17127" class="bulleted-list"><li><a href="https://www.kaggle.com/datasets">kaggle.com/datasets</a> - Open datasets of projects</li></ul><ul id="eaa9b3f8-99fa-4c70-9d46-7497477f03b4" class="bulleted-list"><li><a href="http://whale.to/">whale.to/</a> - Conspiracy theories</li></ul><ul id="0b22ac75-9b56-4c07-9494-7125f4c4eee2" class="bulleted-list"><li><a href="https://newtotse.com/">newtotse.com/oldtotse/</a> - the Temple of the Screaming Electron (forum, blog, bbs)</li></ul><ul id="9dd3c4de-1e1b-4b3d-bf32-55b60736f947" class="bulleted-list"><li><a href="https://4museum-v.neocities.org/">4museum-v.neocities.org/</a> - static 4chan archive from 2006 to 2008</li></ul><ul id="3d2ee1ff-112a-41cb-8f24-4f43d0024e4f" class="bulleted-list"><li><a href="https://www.bamsoftware.com/hacks/zipbomb/">bamsoftware.com/hacks/</a> - some interesting projects</li></ul><ul id="b63b9369-0f68-41da-952f-a6e7a81c67d8" class="bulleted-list"><li><a href="https://www.eurocanadian.ca/2018/04/the-myth-of-homosexuality-in-ancient-greece.html">eurocanadian.ca/2018/04/the-myth-of-homosexuality-in-ancient-greece.html</a> - Greeks weren’t always bent</li></ul><ul id="48d09a8c-430e-43c2-ae88-ff71d2653280" class="bulleted-list"><li><a href="https://orteil.dashnet.org/">orteil.dashnet.org</a> - orteil</li></ul><ul id="e252f498-7f42-4696-bd27-beb1b0d75801" class="bulleted-list"><li><a href="https://catalog.neet.tv/g/">catalog.neet.tv/g/</a> - original catalog</li></ul><ul id="281a6ad3-d75d-4053-b0f2-b9deef8b7e95" class="bulleted-list"><li><a href="https://hdlbits.01xz.net/wiki/Main_Page">hdlbits.01xz.net/wiki/Main_Page</a> - HDLBits is a collection of small circuit design exercises for practicing digital hardware design(HDL).</li></ul><ul id="bef8837b-c3e9-4397-8c0c-55f21e00b721" class="bulleted-list"><li><a href="https://nwowatch.neocities.org/">nwowatch.neocities.org/</a> - Some guy keeping an eye on the NWO for us. (conspiracy)</li></ul><ul id="fb9f1117-2f65-4f9a-bcc3-caeab0c08c42" class="bulleted-list"><li><a href="https://sel4.systems/">sel4.systems/ </a>The seL4Â® Microkernel</li></ul><ul id="509a3bc7-7d95-4679-9f9c-ef44bddcd407" class="bulleted-list"><li><a href="https://ipfs.io/ipfs/Qmd6wXYYzqeS8CikCXBK4PFfmFyBZnF9nxiwSdjAHqG9rC/">ipfs.io/ipfs/QmSxqrrwUc5hQbyEtMSeF8FKfsWDuvcyUdFEeHXtjxhQgL/</a> - Total Hardware 1999</li></ul><ul id="4bd776d6-329d-4baa-805e-0ad8cfe95575" class="bulleted-list"><li><a href="https://ipfs.io/ipfs/QmSxqrrwUc5hQbyEtMSeF8FKfsWDuvcyUdFEeHXtjxhQgL/">ipfs.io/ipfs/QmSxqrrwUc5hQbyEtMSeF8FKfsWDuvcyUdFEeHXtjxhQgL/</a> - Reciprocality</li></ul><h3 id="7999cde5-cfbb-461f-812f-b5a8fa58755c" class="">Useful sites:</h3><ul id="142b7dd8-6038-4830-9a5b-cd7937f9e558" class="bulleted-list"><li><a href="https://weboas.is/">weboas.is</a> - A home page replacement with bookmarks, chat, radio, wallpapers, too much in it to easily describe.</li></ul><ul id="50073ff6-281e-4639-b43c-95b7cabf77fa" class="bulleted-list"><li><a href="https://webgradients.com/">webgradients.com</a> - web gradients.</li></ul><ul id="2f52f6b5-1a3a-4ea4-a75f-e476f54c31cc" class="bulleted-list"><li><a href="https://pad.riseup.net/">pad.riseup.net</a> - collaborative word processor online.</li></ul><ul id="d22d0366-1e82-4dae-bec9-a9005b831e83" class="bulleted-list"><li><a href="https://openproxy.space/list">openproxy.space/list</a> - good source for proxies.</li></ul><ul id="2e317cef-f7d1-43b9-a18d-1f0403e1a2f2" class="bulleted-list"><li><a href="https://fitgirl-repacks.site/">fitgirl-repacks.site</a> - Cracked, compressed games to download.</li></ul><ul id="49b1da25-3780-49b1-aae9-755d199c9f65" class="bulleted-list"><li><a href="https://www.deepl.com/en/translator">deepl.com/en/translator</a> - A translator better than Google Translate.</li></ul><ul id="fd921fe7-aa15-4c0f-a05a-2694127bbb2d" class="bulleted-list"><li><a href="http://waifu2x.udp.jp/">waifu2x.udp.jp</a> - A site to scale images without the loss of quality and remove jpeg artifacts.</li></ul><ul id="49c63a94-1632-4911-92a8-0b105a112934" class="bulleted-list"><li><a href="http://www.lagom.nl/lcd-test/clock_phase.php">lagom.nl/lcd-test/clock_phase.php</a> - Misc tests to check if your monitor sucks or not.</li></ul><ul id="28c15571-583f-4b1a-bdcc-09744f4a3c22" class="bulleted-list"><li><a href="https://filebin.net/">filebin.net</a> - an alright anonymous file host, but it’s been really fucking slow lately and it tends to get full very quickly.</li></ul><ul id="d4ab0b77-2c00-40a7-93fd-42ea9f2ff175" class="bulleted-list"><li><a href="https://gofile.io/">gofile.io</a> - Another anonymous file host.</li></ul><ul id="6deae99d-7034-43c0-b92c-436cc07c5bcf" class="bulleted-list"><li><a href="http://detexify.kirelabs.org/classify.html">detexify.kirelabs.org/classify.html</a> - Symbol finder for LaTeX.</li></ul><ul id="7b01e77b-5bad-4e77-8df8-1b4d1dadfb33" class="bulleted-list"><li><a href="https://piracy.now.sh/">piracy.now.sh</a> - A great collection of piracy related links.</li></ul><ul id="ae851af8-2448-440f-9e40-d6a954e8b85e" class="bulleted-list"><li><a href="https://unblocked-pw.github.io/">unblocked-pw.github.io</a> - Mirrors for good torrent sites.</li></ul><ul id="6f3c7144-1484-4fa8-9c32-318902a0c552" class="bulleted-list"><li><a href="https://www.filechef.com/">filechef.com</a> - File finder using google dorks.</li></ul><ul id="a5292dab-b1aa-40d8-ae51-2eacc67a13fd" class="bulleted-list"><li><a href="https://theromdepot.com/">theromdepot.com</a> - Roms.</li></ul><ul id="edf21bde-4d22-41f6-a102-dbd623ad5d46" class="bulleted-list"><li><a href="https://github.com/Igglybuff/awesome-piracy/blob/master/readme.md">github.com/Igglybuff/awesome-piracy/blob/master/readme.md</a> - More very useful links with a focus on piracy.</li></ul><ul id="3d7c9bd7-d9e1-48f8-af2f-4ab7a9d343c2" class="bulleted-list"><li><a href="https://newtrackon.com/list">newtrackon.com/list</a> - List of stable trackers.</li></ul><ul id="c2bf92ca-a619-4df5-b891-8a4133dbea71" class="bulleted-list"><li><a href="https://cssauthor.com/">cssauthor.com</a> - Templates and such.</li></ul><ul id="92f336de-3701-4c3a-a19a-0fd5d36d62b2" class="bulleted-list"><li><a href="https://forum.mobilism.org/index.php">forum.mobilism.org/index.php</a> - Books, android/iOS apps and more.</li></ul><ul id="b706c702-1bdd-4a84-8bc1-2ceb880201eb" class="bulleted-list"><li><a href="https://coderprog.com/">coderprog.com/</a> - Programming books, courses.</li></ul><ul id="df48ab18-c9a7-47ed-931c-099972708906" class="bulleted-list"><li><a href="https://html5up.net/">html5up.net</a> - Free responsive HTML5 and CSS3 site templates.</li></ul><ul id="d6e8032f-3694-4102-806e-0b6588b90c42" class="bulleted-list"><li><a href="http://www.streamlord.com/">streamlord.com</a> - Good for streaming movies.</li></ul><ul id="e484afa8-e2cf-4f43-a6cf-6f0288b81431" class="bulleted-list"><li><a href="http://computernewb.com/collab-vm">computernewb.com/collab-vm</a> - Control a remote virtual machine</li></ul><ul id="abdc9c65-b922-45ed-9aed-8f3acb30b272" class="bulleted-list"><li><a href="https://trace.moe/">trace.moe</a> - A search engine for anime screenshots. Won’t work with crops. It will give episode and timestamp of a good screenshot.</li></ul><ul id="9781f275-d4a6-4ca0-87d0-155138bb2615" class="bulleted-list"><li><a href="https://v5.nomie.app/">v5.nomie.app</a> - Life tracker but private.</li></ul><ul id="c16abe98-feab-477f-ad18-825853076383" class="bulleted-list"><li><a href="https://odcrawler.xyz/">odcrawler.xyz</a> - Open directory crawler.</li></ul><ul id="90fffbc9-6a80-48d9-91e3-4b74f054a68a" class="bulleted-list"><li><a href="https://sleepyti.me/">sleepyti.me</a> - Bed time calculator.</li></ul><ul id="000a75d5-aace-4c8d-af4c-1b1a671b32a1" class="bulleted-list"><li><a href="https://dmca.gripe/">dmca.gripe</a> - File sharing site</li></ul><ul id="52e33003-ed4e-4aa5-a077-39f471d0946f" class="bulleted-list"><li><a href="https://zz.ht/">zz.ht</a> - File sharing site</li></ul><ul id="7a94f6e0-aec7-4d90-bc43-9365cb5363ef" class="bulleted-list"><li><a href="https://www.portablefreeware.com/">portablefreeware.com</a> - Portable freeware</li></ul><ul id="ddf96196-8b1e-42f2-9c9f-0c8a994b0708" class="bulleted-list"><li><a href="https://gpldl.com/">gpldl.com</a> - Free premium wordpress stuff</li></ul><ul id="ff8b6b34-0bda-42cf-bef5-c406c59f3339" class="bulleted-list"><li><a href="https://osintframework.com/">osintframework.com</a> - OSINT framework focused on gathering information from free tools or resources.</li></ul><ul id="446cae64-364e-4aaa-80c4-2b05fef8a4b1" class="bulleted-list"><li><a href="https://github.com/awesome-selfhosted/awesome-selfhosted">github.com/awesome-selfhosted/awesome-selfhosted</a> - A list of Free Software network services and web apps which can be self hosted</li></ul><ul id="f2657f8a-967e-4270-8b11-c1a92868abd9" class="bulleted-list"><li><a href="https://libraries.io/">libraries.io</a> - Search open source packages, frameworks and tools…</li></ul><ul id="dc2694ec-9c8b-45a3-80c4-cd82697928ad" class="bulleted-list"><li><a href="https://github.com/Hack-with-Github/Awesome-Hacking/blob/master/README.md">github.com/Hack-with-Github/Awesome-Hacking/blob/master/README.md</a> - pentesting resources.</li></ul><ul id="947876e7-a474-43bb-b235-5539668f53b4" class="bulleted-list"><li><a href="https://www.wolframalpha.com/">wolframalpha.com</a> - Not only for math.</li></ul><ul id="61431b23-9629-48e7-bfdc-78f09bc5bdea" class="bulleted-list"><li><a href="https://www.falstad.com/mathphysics.html">falstad.com/mathphysics.html</a> - Several applets for math, physics, and EE</li></ul><ul id="0683f1a7-c523-4393-ab50-9763a2c4a7e9" class="bulleted-list"><li><a href="https://nandgame.com/">nandgame.com</a> - learning game about gates and components.</li></ul><ul id="d5ecc8fb-a01f-4ecd-b238-62daf6c88750" class="bulleted-list"><li><a href="https://zbigz.com/">zbigz.com</a> - Online torrent client.</li></ul><ul id="aad14483-457b-4107-b4d5-f385bf50bba2" class="bulleted-list"><li><a href="https://wq.apnic.net/static/search.html">wq.apnic.net/static/search.html</a> - Jim Browning’s recommendation for lookups</li></ul><ul id="06700508-9980-4a08-82ff-0c366883e922" class="bulleted-list"><li><a href="https://invidious.snopyta.org/">invidious.snopyta.org/</a> or <a href="https://github.com/iv-org/invidious/">github.com/iv-org/invidious/</a> is a front-end for YouTube.</li></ul><ul id="ab8babeb-d043-4127-8eea-8d8ffc2ef416" class="bulleted-list"><li><a href="https://jlcollinsnh.com/manifesto">jlcollinsnh.com/manifesto</a> - Best financial advice ever: (actually)</li></ul><ul id="9386f7ce-f39b-4e89-bc0d-07e8747e757e" class="bulleted-list"><li><a href="https://www.wanikani.com/">wanikani.com</a> - Good tool to grind and learn kanji</li></ul><ul id="71a7646f-c6ec-4f5c-bd11-ff599671adbc" class="bulleted-list"><li><a href="https://cq.cx/ladder.pl">cq.cx/ladder.pl</a> - A compiler that starts with a ladder diagram and generates native PIC16 or AVR code.</li></ul><ul id="295b313e-d407-4803-9650-5b39302016e3" class="bulleted-list"><li><a href="https://eaglepoll.ga/">eaglepoll.ga</a> - polling website like strawpoll that will work without javascript (given cloudflare doesn’t think you’re a botnet)</li></ul><ul id="83c17f2f-0590-49ca-bf74-11e687d2bf18" class="bulleted-list"><li><a href="https://www.nirsoft.net/">nirsoft.net</a> -NirSoft web site provides a unique collection of small and useful freeware utilities.</li></ul><ul id="4b978581-9590-4c4c-99ac-873ce28ef029" class="bulleted-list"><li><a href="https://pinetools.com/">pinetools.com</a> - A lot of useful tools, such as timers, calculators, randomizers, etc</li></ul><ul id="a9a9f941-4b4a-445c-a4bb-b762aa5c55b2" class="bulleted-list"><li><a href="https://nopaystation.com/">nopaystation.com</a> - Shh keep it quiet.</li></ul><ul id="810994f4-bf12-4106-bc47-7520b254df3c" class="bulleted-list"><li><a href="https://wiki.c2.com/">wiki.c2.com</a> - The Original Wiki. Focuses way more on tech and programming than the general purpose Wikipedia.</li></ul><ul id="3e43363b-c35b-464a-a21a-f1b38881964d" class="bulleted-list"><li><a href="https://teddit.net/">teddit.net/</a> - Very minimal Reddit front end site</li></ul><ul id="cec90843-8e2d-4a03-9c73-6600541779d1" class="bulleted-list"><li><a href="https://nitter.net/">nitter.net/</a> - Very minimal Twitter front end site</li></ul><ul id="c021a9b5-ff6b-49e3-8ffe-befe6d6146b9" class="bulleted-list"><li><a href="https://filelisting.com/">filelisting.com/</a> - FileListing (pretty good at searching for torrents)</li></ul><ul id="239e9b8b-b3c2-4123-a79e-f942a0c51217" class="bulleted-list"><li><a href="https://filepursuit.com/">filepursuit.com/</a> - FilePursuit</li></ul><ul id="eac41bde-fcf6-4f32-bb53-2e48d4744c49" class="bulleted-list"><li><a href="https://lumpysoft.com/">lumpysoft.com/</a> - Google Index Search</li></ul><ul id="3d115c27-87e9-4b21-bb3b-0c9bff91b671" class="bulleted-list"><li><a href="http://megasearch.co/">megasearch.co/</a> - MegaSearch (searches for public files on MEGA, MediaFire, etc.)</li></ul><ul id="c8fa8643-49be-4908-aeeb-0ede8ab47fa4" class="bulleted-list"><li><a href="http://musgle.com/">musgle.com/</a> - Search music files through google</li></ul><ul id="f953acf1-2d76-41f2-801b-5046cff9bba2" class="bulleted-list"><li><a href="https://opendirsearch.abifog.com/">opendirsearch.abifog.com/</a> - Open Directory Search Portal</li></ul><ul id="50260354-dea0-4193-9d44-602308cc7936" class="bulleted-list"><li><a href="http://palined.com/search/">palined.com/search/</a> - Google Open Directory Search</li></ul><ul id="594d7e7a-0987-4073-8562-279f6cb507d9" class="bulleted-list"><li><a href="https://proisk.com/">proisk.com/</a> - proisk search and ftp</li></ul><ul id="8e254128-6933-41d6-8b9e-05fcd923ee37" class="bulleted-list"><li><a href="https://snowfl.com/">snowfl.com/</a> - snowfl (searches various public torrent indexes)</li></ul><ul id="a605a5fb-201e-4d93-a0cb-1062f8109dc9" class="bulleted-list"><li><a href="https://www.catfiles.net/">catfiles.net/</a> - CatFiles</li></ul><ul id="2fff97f9-c562-4886-bfd8-4df642ee92f9" class="bulleted-list"><li><a href="https://www.dedigger.com/">dedigger.com/</a> - dedigger (search for public files on Google Drive)</li></ul><ul id="ddf32b9f-ef94-40c7-b3f6-0f988401ad23" class="bulleted-list"><li><a href="https://www.eyeofjustice.com/od/">eyeofjustice.com/od/</a> - Open Directory Search Portal</li></ul><ul id="df4f2c37-8787-46fa-b6fb-2782922a8bad" class="bulleted-list"><li><a href="https://www.mmnt.ru/int/">mmnt.ru/int/</a> - Mamont FTP search engine</li></ul><ul id="34b02d02-95a3-4929-9c90-3de29d0c2d86" class="bulleted-list"><li><a href="https://www.searchftps.net/">searchftps.net/</a> - NAPALM FTP search engine</li></ul><ul id="910cc604-715e-4587-b31e-144a09c3f8e5" class="bulleted-list"><li><a href="https://bios-pw.org/">bios-pw.org/</a> - BIOS Password Recovery for Laptops</li></ul><ul id="d4803f98-982f-4dae-b328-ccab2669c6ad" class="bulleted-list"><li><a href="https://w3i.org/">w3i.org/</a> - old style but very well organised link list</li></ul><ul id="b14d4987-0d4f-4e01-a84d-805e2a1069f3" class="bulleted-list"><li><a href="https://4stats.io/">4stats.io/</a> - 4chan board stats</li></ul><ul id="db131c54-de9e-4a7a-b1d8-fe7ac0d68bd2" class="bulleted-list"><li><a href="https://search.mibbit.com/">search.mibbit.com/</a> - search engine for IRC</li></ul><ul id="77588735-a38d-45d1-bdca-27058a6121b1" class="bulleted-list"><li><a href="http://www.wtfpl.net/">wtfpl.net/</a> - do what the fuck you want public license</li></ul><ul id="76fc18d1-3996-4a05-8e74-d3c10bedd6e9" class="bulleted-list"><li><a href="https://www.curtiswallen.com/pgp/">curtiswallen.com/pgp/</a> - good pgp guide</li></ul><ul id="347f9b37-7b04-4ed2-9554-5837723c0b42" class="bulleted-list"><li><a href="https://www.protectedtext.com/">protectedtext.com</a> - a really great place to keep text</li></ul><ul id="69ce38a6-c211-4d00-b81d-12e8bd821223" class="bulleted-list"><li><a href="https://rentry.co/">rentry.co</a> - another really great place to keep text</li></ul><ul id="6cd2ec11-d7ce-4dab-ba59-e57397793223" class="bulleted-list"><li><a href="https://ianli.github.io/so-you-need-a-typeface/">ianli.github.io/so-you-need-a-typeface/</a> - A place to find a typeface</li></ul><ul id="82379636-c35e-4542-8338-6d418e25ce76" class="bulleted-list"><li><a href="https://smmry.com/">smmry.com/</a> - Makes tl;dr with a very simple algo. Works best on news than technical texts.</li></ul><ul id="c52f4d85-c321-48f8-a24e-f44db17fb694" class="bulleted-list"><li><a href="https://10minutemail.com/">10minutemail.com/</a> - Temporary email addresses</li></ul><ul id="94849612-bfdd-4535-a6ce-7635a5fa5196" class="bulleted-list"><li><a href="https://catalog.neet.tv/harlequin.html">catalog.neet.tv/harlequin.html</a> - thread wordcloud</li></ul><ul id="94e0f199-ca9c-4abf-a3a1-1d12d6d81fcd" class="bulleted-list"><li><a href="https://certbot.eff.org/">certbot.eff.org/</a> - Free SSL certificates</li></ul><ul id="6badc539-ee3e-4ade-8a72-71e12d1c8c39" class="bulleted-list"><li><a href="https://catbox.moe/">catbox.moe/</a> - a cute file uploading site</li></ul><ul id="b23d3aa5-698e-482c-a42b-836589e8ee62" class="bulleted-list"><li><a href="https://palettegenerator.com/">palettegenerator.com/</a> - Palette Generator</li></ul><ul id="157ea4b6-7e2d-4af4-b7c4-76e629a998dc" class="bulleted-list"><li><a href="https://lolilabs.xyz/">lolilabs.xyz/</a> - url shortner</li></ul><ul id="a001ce28-a482-4c58-9253-27ad590ef22f" class="bulleted-list"><li><a href="https://retroshare.cc/">retroshare.cc</a> - Retroshare is a free and open-source peer-to-peer communication and file sharing app built on GNU Privacy Guard.</li></ul><ul id="a986e809-6d36-4937-b05e-6caab0bf3200" class="bulleted-list"><li><a href="https://learnxinyminutes.com/">learnxinyminutes.com/</a> - Language resources for programming</li></ul><ul id="24f4630a-2790-4472-a2eb-24467bd63f53" class="bulleted-list"><li><a href="https://disroot.org/en">disroot.org/en</a> - Another collection of privacy-respecting online services such as email, pastebin, and cloud storage.</li></ul><ul id="89959c6a-2167-45b9-83fb-97b35901d6a5" class="bulleted-list"><li><a href="https://snopyta.org/">snopyta.org/</a> - Collection of FOSS and privacy-respecting online services, such as DNS, Searx, Invidious, etc.</li></ul><ul id="7e197963-b1df-4c1d-8222-bef5b5fe36f5" class="bulleted-list"><li><a href="https://xdcc2.jav.pw/">xdcc2.jav.pw/</a> - XDCC packlist</li></ul><ul id="36f1601a-df44-4f27-88ec-1295b2dcc401" class="bulleted-list"><li><a href="https://petalica-paint.pixiv.dev/index_en.html">petalica-paint.pixiv.dev/index_en.html</a> - paints-chainer, apparently part of pixiv now</li></ul><ul id="37a3bbe3-3f71-4539-91b4-d6c265f6aad0" class="bulleted-list"><li><a href="https://gchq.github.io/CyberChef/">gchq.github.io/CyberChef/</a> - Tool for encoding/decoding/hashing and much more.</li></ul><h3 id="9f777c02-f404-4cd4-8feb-22db6f257739" class="">Image (editors, generators etc.) sites:</h3><ul id="714e3f09-3b63-4add-8df9-351801f95ec1" class="bulleted-list"><li><a href="https://www.photopea.com/">photopea.com</a> - Basically photoshop but online.</li></ul><ul id="9657528e-4688-40fe-abbb-ab1fee93939c" class="bulleted-list"><li><a href="https://www.makewordart.com/">makewordart.com</a> - Classic Wordart generator.</li></ul><ul id="e9511085-0ae2-44c7-b747-ff9e9427854e" class="bulleted-list"><li><a href="https://jspaint.app/">jspaint.app</a> - Classic paint with some intresting features added.</li></ul><ul id="2aef7752-5713-49b6-9bc1-1a8a963eeb05" class="bulleted-list"><li><a href="https://snorpey.github.io/jpg-glitch">snorpey.github.io/jpg-glitch</a> - Glitch your images.</li></ul><ul id="c33690e8-2f49-4cb2-9d95-568a229a5b22" class="bulleted-list"><li><a href="https://app.monopro.org/pixel/?lang=en">app.monopro.org/pixel/?lang=en</a> - Pixelart Converter</li></ul><ul id="959427e4-788a-45aa-b533-6aebfe57909f" class="bulleted-list"><li><a href="http://sh00n3m1gur.000webhostapp.com/">sh00n3m1gur.000webhostapp.com</a> - Random images.</li></ul><ul id="d19936c6-61ad-42d3-b520-f0321f9fd6ea" class="bulleted-list"><li><a href="https://photomosh.com/">photomosh.com</a> - Glitch your images some more.</li></ul><ul id="78c9f081-1f75-4520-8c46-e2125da72ac2" class="bulleted-list"><li><a href="https://thisxdoesnotexist.com/">thisxdoesnotexist.com</a> - A collection of things that don’t exist.</li></ul><ul id="5e6ef351-944d-41d2-b482-0f0a593a77cd" class="bulleted-list"><li><a href="https://dreamscopeapp.com/">dreamscopeapp.com</a> - Image effect generator, can be kinda slow.</li></ul><ul id="4c3ec7c7-5a2c-403a-9cc9-9b5174b1c8e6" class="bulleted-list"><li><a href="https://trimage.org/">trimage.org</a> - Tool to optimize images.</li></ul><ul id="cb9e6a90-7a8c-496c-88bc-2199561e0553" class="bulleted-list"><li><a href="https://postimages.org/">postimages.org</a> - Just a good site to upload images.</li></ul><ul id="f716acca-f18f-4862-b8b6-6a25df5d3846" class="bulleted-list"><li><a href="https://www.cockos.com/licecap">cockos.com/licecap</a> - Tool to capture gifs.</li></ul><ul id="56d8ace7-1073-4baf-86a8-b47a6e71a663" class="bulleted-list"><li><a href="https://freedownloadae.com/">freedownloadae.com</a> - Graphic assets</li></ul><ul id="3a8c67f7-9346-4dd7-9414-b371ea0fd24a" class="bulleted-list"><li><a href="http://wigflip.com/roflbot">wigflip.com/roflbot</a> - roflbot is for adding text and captions to a picture, a la I Can Has Cheezburger.</li></ul><ul id="8c97c4ec-956f-42d3-a3c2-e467b6877ac0" class="bulleted-list"><li><a href="https://gifcities.org/">gifcities.org</a> - The GeoCities Animated GIF Search Engine</li></ul><ul id="c83ccd84-9a57-4213-a4f2-f7e489a1df46" class="bulleted-list"><li><a href="https://ezgif.com/">ezgif.com</a> - gif editor and maker, super useful.</li></ul><ul id="6e9135c9-c7f6-42a0-be55-41c71ce8902c" class="bulleted-list"><li><a href="https://drive.google.com/drive/folders/0B_VmbVyD4eT3N1VUbGN4Wjd5OVE">drive.google.com/drive/folders/0B_VmbVyD4eT3N1VUbGN4Wjd5OVE</a> - Old Gdrive with anime vectors</li></ul><ul id="ec04d12a-32cf-4bf8-a4fb-715288f67fa9" class="bulleted-list"><li><a href="https://www10.flamingtext.com/">https://www10.flamingtext.com/</a> - Free logo Design &amp; Name Generator</li></ul><ul id="e04f8a86-344e-4698-b308-60670ffed0a6" class="bulleted-list"><li><a href="https://www.remove.bg/">remove.bg/</a> - Automagically remove backgrounds from images. Not 100% but shockingly good</li></ul><ul id="dee3705b-7402-4554-af92-001d8ce9435c" class="bulleted-list"><li><a href="https://waifu.lofiu.com/">waifu.lofiu.com/</a> - Convert your selfie to waifu</li></ul><ul id="b9bb5b70-ee7a-4431-b140-31513f1aaa73" class="bulleted-list"><li><a href="https://imgops.com/">imgops.com/</a> - image tools</li></ul><ul id="7cffc268-9b90-4cde-ba54-ae8389c2854c" class="bulleted-list"><li><a href="https://nik.bot.nu/">nik.bot.nu/</a> - Imageboard scraper, great for wallpapers</li></ul><h3 id="dad45c34-8fb6-41c4-8ef5-12e70801634d" class="">Aesthetic/ cool sites:</h3><ul id="a8425b8d-7812-4ee4-8dc8-1230bdac4d32" class="bulleted-list"><li><a href="https://www.windows93.net/">windows93.net</a> - A fun OS made in JS with some actually fun stuff to do.</li></ul><ul id="96572f98-87ae-42f3-bc7d-dc0840abd36f" class="bulleted-list"><li><a href="https://initiate.space/">initiate.space</a> - Aesthetic site which wants your soul and hosts an imageboard, posting it seems to attract its users.</li></ul><ul id="992f8d16-2612-4ee7-9a37-9c110596d6c1" class="bulleted-list"><li><a href="https://angusnicneven.com/">angusnicneven.com</a> - I don’t even.</li></ul><ul id="9dac26f6-2c24-46a4-ae01-e69ee4b5d630" class="bulleted-list"><li><a href="https://fauux.neocities.org/">fauux.neocities.org</a> - I don’t even.</li></ul><ul id="97475f97-510d-4dbe-b197-ffcf58ac657c" class="bulleted-list"><li><a href="https://systemspace.network/">systemspace.network/</a> - I don’t even.</li></ul><ul id="aa701c99-32dc-4bb4-b0e0-59df4051faba" class="bulleted-list"><li><a href="https://www.cameronsworld.net/">cameronsworld.net</a> - A love letter to the Internet of old.</li></ul><ul id="f042fdc6-5fd4-4cbb-ab4f-71a268b36f49" class="bulleted-list"><li><a href="https://acko.net/">acko.net</a> - Asthetic and generally cool af.</li></ul><ul id="3ce6bac7-8b3a-46a1-a585-0cbccc1205dc" class="bulleted-list"><li><a href="https://poolside.fm/">poolside.fm</a> - like if an operating system was designed by a woman in her 40s</li></ul><ul id="dcb6c893-9f52-448b-a781-6451e7d6915e" class="bulleted-list"><li><a href="https://akham.netlify.app/">akham.netlify.app</a> - a simple home page that supports keyboard shortcuts made by Anon</li></ul><ul id="6eca4df9-8948-4450-b3f0-54bf46b015d1" class="bulleted-list"><li><a href="https://peelopaalu.neocities.org/">peelopaalu.neocities.org</a> - A collection of sites lovingly put together by Anon.</li></ul><ul id="5b458d16-7ee2-4878-ad21-614896f1dc15" class="bulleted-list"><li><a href="https://pea.moe/">pea.moe</a> - Some guy’s site with a terminal and Kyouko.</li></ul><ul id="343067b9-06aa-4aff-8f49-7236457c1708" class="bulleted-list"><li><a href="https://tsumugi.online/">tsumugi.online</a> - Another guy’s site with a Win 98 theme and Mugi.</li></ul><ul id="9c41edb1-1fe2-42c8-bb44-896e06d527e4" class="bulleted-list"><li><a href="https://w3i.org/">w3i.org</a> - The so-called “World Wide Web Index” by Anon.</li></ul><ul id="83d8b9c2-6046-47b0-b487-28b1f3dedc50" class="bulleted-list"><li><a href="https://kemono.party/">kemono.party</a> - A paywall archive made by a tripfag</li></ul><ul id="35c6ab67-fbc5-4e67-ad4b-b5a5fb72095e" class="bulleted-list"><li><a href="https://nipponcolors.com/">nipponcolors.com/</a> - a nice css endeavor</li></ul><h3 id="9b0dc0a9-3556-4ecb-af81-21ad8f49f853" class="">Book sites:</h3><ul id="71b44f2a-4c3d-4dcb-8a47-3b5a57ada0f4" class="bulleted-list"><li><a href="http://libgen.rs/">libgen.rs</a> - It’s a massive book, scientific journal and all their articles, comics etc. site.</li></ul><ul id="74971566-ee87-4e3c-97f9-c58ae50bcad6" class="bulleted-list"><li><a href="https://sci-hub.se/">sci-hub.se</a> - Like above with a more pure focus on scientific research papers.</li></ul><ul id="e751075e-6168-4f25-a3d0-3b71b944a66e" class="bulleted-list"><li><a href="https://b-ok.global/">b-ok.global</a> - E-book library.</li></ul><ul id="93bef48b-53db-49a9-9a09-4a1c8a9f7d45" class="bulleted-list"><li><a href="http://gen.lib.rus.ec/">gen.lib.rus.ec</a> - Get that book for free</li></ul><ul id="5fb49ccc-394b-439a-be3b-e9ffc91da70c" class="bulleted-list"><li><a href="https://www.pdfdrive.com/">pdfdrive.com</a> - Get that book for free</li></ul><ul id="d2ef5235-53bd-4651-85fd-f13d2ba001af" class="bulleted-list"><li><a href="https://www.1lib.eu/">1lib.eu</a> - Get that book for free</li></ul><ul id="e2d4b38b-5e2c-4ff2-bf80-5f9a3822d721" class="bulleted-list"><li><a href="https://www.gutenberg.org/">gutenberg.org</a> - Get that book for free</li></ul><ul id="efe4fa8a-65ea-44fb-924f-09507871acde" class="bulleted-list"><li><a href="https://standardebooks.org/">standardebooks.org</a> - This is like gutenberg but the ebooks have been formatted nicely and proofed for typos.</li></ul><h3 id="b1ec301c-7d36-44e5-98fa-f3fece74cbed" class="">Humour/fun sites:</h3><ul id="ddb01513-aeab-4998-a208-c9f04aeebb38" class="bulleted-list"><li><a href="https://www.moanmyip.com/">moanmyip.com</a> - Moans your IP</li></ul><ul id="891fc6de-6eb8-4dde-acf0-2f5b77cb2f7f" class="bulleted-list"><li><a href="https://play.aidungeon.io/">play.aidungeon.io</a> - Very cool text adventure game that lets you act out very odd scenarios.</li></ul><ul id="8681652f-de3f-450f-80fc-4188de2e1656" class="bulleted-list"><li><a href="https://alexnisnevich.github.io/untrusted">alexnisnevich.github.io/untrusted</a> - Some kind of game that people seem to like.</li></ul><ul id="f81138f8-a399-4b1f-8f9c-924831f8f9f4" class="bulleted-list"><li><a href="http://beesbeesbees.com/">beesbeesbees.com</a> - bees.</li></ul><ul id="044a8a5e-fce8-4ae2-b91c-35f6227be1a4" class="bulleted-list"><li><a href="https://www.lingscars.com/">lingscars.com</a> - If you ever need to rent a car in the UK from a Chinese lady, do it here.</li></ul><ul id="0e63a940-98ab-4515-a555-21cb6383e1d2" class="bulleted-list"><li><a href="https://thebest404pageeverredux.com/">thebest404pageeverredux.com</a> - Random flash videos.</li></ul><ul id="ae060e95-8de3-4781-8f65-5a26bed44265" class="bulleted-list"><li><a href="http://autists.net/">autists.net</a> - Link to a collection of autists.</li></ul><ul id="abcebc19-3c71-4ecb-8e94-acdb8948c2b9" class="bulleted-list"><li><a href="http://burymewithmymoney.com/">burymewithmymoney.com</a> - single serving site.</li></ul><ul id="a87bc51b-833f-4d8a-8479-01cca5bd8060" class="bulleted-list"><li><a href="http://loli.dance/">loli.dance</a> - single serving loli dance site.</li></ul><ul id="e1e4c26c-4851-4d7c-8072-b63fa8240688" class="bulleted-list"><li><a href="http://instituteforspacepolitics.org/">instituteforspacepolitics.org</a> - single serving site.</li></ul><ul id="403bd126-3518-4443-965e-478583f48c0f" class="bulleted-list"><li><a href="https://openings.moe/">openings.moe</a> - Anime openings.</li></ul><ul id="4864f09b-4719-4492-abde-29b65a8b900d" class="bulleted-list"><li><a href="https://yyyyyyy.info/">yyyyyyy.info</a> - A site with no discernible purpose but randum XD</li></ul><ul id="2a68792b-26f0-4515-9982-364901260881" class="bulleted-list"><li><a href="http://sod.jodi.org/">sod.jodi.org</a> - A site with no discernible purpose but randum XD</li></ul><ul id="a0be1811-bad6-4931-b024-ba9c81a93f2e" class="bulleted-list"><li><a href="http://geogoo.net/">geogoo.net</a> - A site with no discernible purpose but randum XD</li></ul><ul id="a527f767-3530-4182-a9b4-1e6f0d5c0ae7" class="bulleted-list"><li><a href="https://g33con.com/">g33con.com</a> - A site with no discernible purpose but randum XD</li></ul><ul id="de6e5448-970f-47bd-9f4c-93e1c82b9939" class="bulleted-list"><li><a href="http://sanger.dk/">sanger.dk</a> - Flash doggo licking your monitor</li></ul><ul id="025ac2d3-55d0-4062-b640-2c1511d3eec1" class="bulleted-list"><li><a href="https://z0r.de/">z0r.de</a> - Random flash videos</li></ul><ul id="39058f89-60ee-46ed-ac10-8255182e8d6f" class="bulleted-list"><li><a href="http://vore.is-best.net/">vore.is-best.net</a> - A site Anon made with no discernible purpose</li></ul><ul id="e642f5bc-e643-4877-bf25-4da3347178fb" class="bulleted-list"><li><a href="http://motherfuckingwebsite.com/">motherfuckingwebsite.com</a> - A basic but rude website. What you see is what you get.</li></ul><ul id="5f10457c-563a-45f6-974f-c6df5c5d6c9e" class="bulleted-list"><li><a href="http://www.abbottsimulator.com/">abbottsimulator.com</a> - Mini web game where you play as former Australian PM Tony Abbott and stop the boats from reaching the country.</li></ul><ul id="c56dd7cd-5ffe-4c87-9cd4-ae08ea184453" class="bulleted-list"><li><a href="http://zombo.com/">zombo.com</a> - Just a useless website for fun.</li></ul><ul id="32c7de04-a0ac-4bcb-8ff8-c336279ca259" class="bulleted-list"><li><a href="https://theuselessweb.com/">theuselessweb.com</a> - Site that directs to other random websites/pages.</li></ul><ul id="6e09f55b-e686-4ffd-aff1-ae865977f67d" class="bulleted-list"><li><a href="https://gnupluslinux.com/">gnupluslinux.com</a> - Plays a video about why GNU/Linux is good. Source is ‘Mawaru Penguindrum’. Also has a Satania image directory.</li></ul><ul id="e4c812dc-9302-4337-b471-becc2aeb8c73" class="bulleted-list"><li><a href="https://wanwan-html5.moe/">wanwan-html5.moe</a> - ‘Wan~’ meme but animated and with multiple characters</li></ul><ul id="6da98f6c-fe02-4a34-a863-d048f05c8cf3" class="bulleted-list"><li><a href="https://kokoro.pyonpyon.moe/">kokoro.pyonpyon.moe</a> - Plays the S1 intro of GochiUsa/GochiUzbekistan</li></ul><ul id="a648f1ec-2af5-424b-8086-7341398e570c" class="bulleted-list"><li><a href="https://wwwwwwwww.jodi.org/">wwwwwwwww.jodi.org</a> - I don’t even</li></ul><ul id="1ac296e4-68d6-4f70-8158-7f0e1a310e1b" class="bulleted-list"><li><a href="https://computerhistory.org/">computerhistory.org</a> - Computer history</li></ul><ul id="29d70128-7694-45f6-89d9-57e9a2536438" class="bulleted-list"><li><a href="https://nogf.club/">nogf.club</a> - tfw no gf</li></ul><ul id="27afdb51-950b-4033-b7bb-97a416fc8bf0" class="bulleted-list"><li><a href="https://blm-egis.maps.arcgis.com/apps/webappviewer/index.html?id=6f0da4c7931440a8a80bfe20eddd7550">blm-egis.maps.arcgis.com/apps/webappviewer/index.html?id=6f0da4c7931440a8a80bfe20eddd7550</a> - BLM maps</li></ul><ul id="8c8035ec-d981-4d1c-9b0d-f05386c3fd73" class="bulleted-list"><li><a href="https://www.howmanypeopleareinspacerightnow.com/">howmanypeopleareinspacerightnow.com</a> - Tells you how many people are in space right now.</li></ul><ul id="4b327188-284f-40bb-856e-8104d45a3a1d" class="bulleted-list"><li><a href="https://f0ck.me/">f0ck.me</a> - Appears to collect images linked in some IRC channel.</li></ul><ul id="aea829dd-cf79-4ba9-a28a-da140f518606" class="bulleted-list"><li><a href="https://tanami.org/">tanami.org</a> - Anon’s own website</li></ul><ul id="c23b8fa1-e2d1-4642-8fe5-7000e71dd17a" class="bulleted-list"><li><a href="https://tanami.org/archive">tanami.org/archive</a> - It’s secret archive</li></ul><ul id="b7e411ae-a5bb-44be-9a68-8b40cab643a1" class="bulleted-list"><li><a href="https://userinyerface.com/">userinyerface.com</a> - A worst-practice UI experiment.</li></ul><ul id="b052119d-09d1-438b-be6a-35bf39c74617" class="bulleted-list"><li><a href="http://pinch.com/">pinch.com</a> - A man with a good domain refuses to budge.</li></ul><ul id="2f246b82-62ac-4424-9586-e530ccffdcf9" class="bulleted-list"><li><a href="https://biggulpsupreme.neocities.org/">biggulpsupreme.neocities.org</a> - a masterful shitpost site.</li></ul><ul id="73f782fd-0ed5-42ca-aab6-6eb4cf868e9f" class="bulleted-list"><li><a href="https://makefrontendshitagain.party/">makefrontendshitagain.party/</a> - make frontend shit again</li></ul><ul id="a86f29c1-1fc1-429a-8774-1fa90f22f1d5" class="bulleted-list"><li><a href="https://gogetspoiled.com/">gogetspoiled.com/</a> - site which spoils movies</li></ul><ul id="f9918e28-faa1-431f-86b5-e9b450027bce" class="bulleted-list"><li><a href="https://www.gotoquiz.com/what_azumanga_daioh_character_are_you_1">gotoquiz.com/what_azumanga_daioh_character_are_you_1</a> - which azumanga daioh character are you?</li></ul><ul id="08d7ff4e-02c2-4cc4-8911-07df4363b453" class="bulleted-list"><li><a href="http://www.rsdb.org/full">rsdb.org/full</a> - the racial slur database</li></ul><ul id="93a801cb-bce2-4026-9f15-6b9f2a175379" class="bulleted-list"><li><a href="https://downloadmorerem.com/">downloadmorerem.com/</a> - A place to get more Rem</li></ul><ul id="40cf8b17-d0a8-445c-b072-c7075de74cc3" class="bulleted-list"><li><a href="http://www.drivemeinsane.com/">drivemeinsane.com/</a> - This site allows you to use home automation to have fun at someone else’s expense</li></ul><ul id="375f6045-6311-4278-ac0a-9a7ea0306dc3" class="bulleted-list"><li><a href="https://rms.sexy/">rms.sexy/</a> - A slideshow of (sexy) RMS</li></ul><ul id="62c000f5-325d-452b-b74f-fbefd58439b6" class="bulleted-list"><li><a href="http://mordorweather.illus.ru/">mordorweather.illus.ru/</a> - Weather of Mordor</li></ul><h3 id="8d4add26-ed47-45ac-a731-05902faa64d7" class="">Audio/music/sound/TTS related sites:</h3><ul id="6a26928c-0801-40e0-8266-212da03c5f62" class="bulleted-list"><li><a href="https://touhou.kuukunen.net/">touhou.kuukunen.net</a> - Weeb music</li></ul><ul id="7b3eedc8-6240-4ea7-97ce-ede4356d677e" class="bulleted-list"><li><a href="https://doujinstyle.com/?p=tlmc">doujinstyle.com/?p=tlmc</a> - Weeb music but in big collections you can download.</li></ul><ul id="257f8778-434e-4907-b282-b6533555bc0e" class="bulleted-list"><li><a href="https://the.wubmachine.com/">the.wubmachine.com</a> - This will remix any audio file you upload with sometimes pleasing results.</li></ul><ul id="9fbdc39a-62f6-4ff3-818e-1122a431a402" class="bulleted-list"><li><a href="https://www.szynalski.com/tone-generator">szynalski.com/tone-generator</a> - Tone generator.</li></ul><ul id="d2f35d9c-74b2-4e16-b767-772d09e9a0c9" class="bulleted-list"><li><a href="https://vo.codes/">vo.codes</a> - Cool text to speech with lots of character voices</li></ul><ul id="f859b5bd-b4b7-41ba-b7c1-3209781655a5" class="bulleted-list"><li><a href="http://everynoise.com/">everynoise.com</a> - Bottom line best site to find new music.</li></ul><ul id="8cf569a6-b81f-4929-ada2-49aace1b7240" class="bulleted-list"><li><a href="https://asoftmurmur.com/">asoftmurmur.com</a> - Comfy noise generator.</li></ul><ul id="5dfbea83-1aa5-4e2a-991c-0abbdaad0616" class="bulleted-list"><li><a href="https://fusion-world-30.blogspot.com/">fusion-world-30.blogspot.com</a> - A blog with Chinese music.</li></ul><ul id="20d5f53a-957a-46da-93b1-c11493d65ecd" class="bulleted-list"><li><a href="https://texttospeech.ca/">texttospeech.ca</a> - A great TTS site made with love by another /g/ Anon.</li></ul><ul id="a13a1c8a-af10-4dc3-b937-981c9ac25b68" class="bulleted-list"><li><a href="http://drdicksdubshack.com/">drdicksdubshack.com</a> - Some kind of radio station, I think.</li></ul><ul id="a759b055-f9f3-49dc-a6a3-212f0d73db5b" class="bulleted-list"><li><a href="https://audioz.download/">audioz.download/</a> - Audio warez, courses, etc.</li></ul><ul id="c999b0f4-094d-4714-9b4d-1b8a0e724df0" class="bulleted-list"><li><a href="https://listenbox.app/">listenbox.app</a> - Lets you listen to youtube links in the background on your phone</li></ul><ul id="723c8a3f-72c9-4fab-bb7a-faf1b588ed65" class="bulleted-list"><li><a href="http://www7.iplusfree.org/">www7.iplusfree.org</a> - Free iTunes Plus M4A</li></ul><ul id="7f5b64a5-c535-4d35-8133-3b75e5611be3" class="bulleted-list"><li><a href="https://podbay.fm/">podbay.fm</a> - Podcasts.</li></ul><ul id="e4df12a7-474d-4c3b-99d7-0f096de4104b" class="bulleted-list"><li><a href="https://420.moe/">420.moe</a> - Anime420girls with some songs and visualizers.</li></ul><ul id="7613a09b-4168-4060-8c3f-bf9aa9af7ae0" class="bulleted-list"><li><a href="https://nodata.tv/">nodata.tv</a> - music leaks</li></ul><ul id="5ed8b87b-69d3-4b7e-93af-bad7bc6ab239" class="bulleted-list"><li><a href="https://rave.dj/">rave.dj</a> - Allows you to create mashups of youtube songs</li></ul><ul id="fa35eb0c-3375-4304-969f-94f0b5d5ebd1" class="bulleted-list"><li><a href="https://melobytes.com/en">melobytes.com/en</a> - AI that does music from images and other stuff</li></ul><ul id="8848e35f-b4f4-4822-894e-d737382f1e48" class="bulleted-list"><li><a href="http://findflac.com/">findflac.com</a> - .flac music finder</li></ul><h3 id="036d0c6f-954a-4407-8886-d2cd1f6f448e" class="">Coomer stuff:</h3><ul id="cf4dab35-9306-44eb-88b8-5c903a0ac90b" class="bulleted-list"><li><a href="http://www.nijibox5.com/futabafiles/kobin/index.html">nijibox5.com/futabafiles/kobin/index.html</a> - Weeb chanstyle site with hentai.</li></ul><ul id="d9a34b3a-93bd-4f19-af15-a2d2d9d50ff8" class="bulleted-list"><li><a href="https://www.asenheim.org/">asenheim.org</a> - Coomer games, I think.</li></ul><ul id="ba16a930-f79d-4b8b-8e63-6329f7970972" class="bulleted-list"><li><a href="https://www.%C3%A3%C2%81%C2%B6%C3%A3%C2%81%C2%A3%C3%A3%C2%81%E2%80%B9%C3%A3%C2%81%E2%80%98%C3%A6%C2%9D%C2%BF.net/">ã ¶ã £ã ‹ã ‘æ ¿.net</a> - Moonspeak coomer chan.</li></ul><ul id="46fd0c00-d0c0-4da8-95c1-799885e714b9" class="bulleted-list"><li><a href="https://f95zone.to/">f95zone.to</a> - Coomer games.</li></ul><ul id="d9023c21-b99c-4b59-9d5e-e68747cb0977" class="bulleted-list"><li><a href="https://www.mikocon.com/forum.php?mod=forumdisplay&amp;fid=46">mikocon.com/forum.php?mod=forumdisplay&amp;fid=46</a> - Hentai</li></ul><ul id="06bb1a3d-46b1-4a56-af1a-ec08b9427a2c" class="bulleted-list"><li><a href="http://kagero.g-serve.net/jewel/index.xml">kagero.g-serve.net/jewel/index.xml - Like… sex dolls and figurines.</a></li></ul><ul id="85cee713-e2a0-43ea-804f-94ef48164f25" class="bulleted-list"><li><a href="http://carstuckgirls.com/">carstuckgirls.com</a> - Images of slutty looking women with their cars “stuck”. A fetish for the strange ones.</li></ul><ul id="7b4bfcbc-7d26-4d09-8f70-a5feac04646f" class="bulleted-list"><li><a href="https://jqgraves.com/">jqgraves.com</a> - Spanking stories.</li></ul><ul id="bf05b53b-085b-4538-a47c-f7d473867418" class="bulleted-list"><li><a href="https://www.zooskoolvideos.com/">zooskoolvideos.com/</a> - literal beastality</li></ul><ul id="825aa02d-e25d-4969-90b9-20d5eff7303f" class="bulleted-list"><li><a href="https://www.141jav.com/">141jav.com/</a> - JAV</li></ul><ul id="6ca24e06-33f6-44b2-a1f3-46176ec85d7c" class="bulleted-list"><li><a href="https://www.javbus.com/en">javbus.com/en</a> - JAV</li></ul><ul id="238b5c9d-a247-4c11-9ffd-f8830c696762" class="bulleted-list"><li><a href="https://www.javlibrary.com/en/">javlibrary.com/en/</a> - JAV</li></ul><ul id="99ce93bf-ebc7-414f-a221-a5af55387ef3" class="bulleted-list"><li><a href="https://onejav.com/">onejav.com/</a> - JAV</li></ul><ul id="fc3325c3-8ba8-4a6b-868c-233972179528" class="bulleted-list"><li><a href="https://cosplay.jav.pw/">cosplay.jav.pw/</a> - JAV Cosplay</li></ul><ul id="95aa2cb5-3cad-4f22-9d1d-4b86df072edb" class="bulleted-list"><li><a href="https://www.iafd.com/">iafd.com/</a> - Internet Adult Film Database</li></ul><h3 id="85ba4369-30e9-4d5d-901e-ee113b98dff7" class="">Other image boards other stuff etc.:</h3><ul id="897da00f-3acc-4e59-beb8-5c7239faf817" class="bulleted-list"><li><a href="https://bvffalo.land/">bvffalo.land</a> - A list of image boards.</li></ul><ul id="02e9efba-0cd9-42a1-a25d-2aaccc0593b5" class="bulleted-list"><li><a href="https://ratwires.space/">ratwires.space</a> - Looks like a purple reddit.</li></ul><ul id="579fb4bd-71ab-49b4-8601-260209e68675" class="bulleted-list"><li><a href="http://bunbunmaru.com/wakaba">bunbunmaru.com/wakaba</a> - Weeb chan.</li></ul><ul id="fbd27c1f-b468-4e35-a65b-5cbc71a134a9" class="bulleted-list"><li><a href="https://dreamch.net/">dreamch.net</a> - Another chan.</li></ul><ul id="c0f2d5b5-2756-4e69-b64a-6a7b8b1a64ba" class="bulleted-list"><li><a href="https://wipp.info/">wipp.info</a> - tl;dr.</li></ul><ul id="0a6ccd2d-2fba-406c-88c2-41e3ef9161d7" class="bulleted-list"><li><a href="https://postbox.garden/">postbox.garden/</a> - the post box “image board”</li></ul><ul id="cefca967-5d79-4e94-98d8-0be5298031b6" class="bulleted-list"><li><a href="https://ib.axypb.net/azu/index.html">ib.axypb.net/azu/index.html</a> - azumanga chan</li></ul><ul id="a3529c18-e223-4126-a013-eb77da5a99c4" class="bulleted-list"><li><a href="https://bus-stop.net/">bus-stop.net</a> - The comfiest little board in the world</li></ul><h3 id="efbd977a-47c7-40fc-98c6-22377d60ba00" class="">Text tools:</h3><ul id="8cb6c0f6-381c-4c59-a712-6e599de3c28e" class="bulleted-list"><li><a href="http://www.eeemo.net/">eeemo.net</a> - Zalgo</li></ul><ul id="23fa2bd0-5edc-4aab-bf26-f841202db9a8" class="bulleted-list"><li><a href="https://onlinetexttools.com/">onlinetexttools.com</a> - Useful text tools.</li></ul><ul id="061f8de3-0e49-4658-8904-8e9c0ce34c11" class="bulleted-list"><li><a href="https://www.ascii-art-generator.org/">ascii-art-generator.org</a> - Ascii Art creator, allows you to convert images to color or monochrome Ascii Art.</li></ul><ul id="deb4e749-6747-49cb-a150-2fb0d1490f5d" class="bulleted-list"><li><a href="https://asciiart.club/">asciiart.club</a> - ASCII Art Generator</li></ul><h3 id="b841d69c-8e91-4663-8b4e-01ffe105c74b" class="">Video / TV / Movie stuff:</h3><ul id="4b137e6f-8153-4cbe-b319-92e9f64641cc" class="bulleted-list"><li><a href="https://azm.to/">azm.to</a> - Movie streams</li></ul><ul id="c1ff95e7-984e-4fff-a157-63df7b88076b" class="bulleted-list"><li><a href="https://www.lunchflix.net/">lunchflix.net</a> - Movie streams</li></ul><ul id="518fd7ed-09b0-4b10-8356-af0ccb27673a" class="bulleted-list"><li><a href="https://ihavenotv.com/">ihavenotv.com</a> - Curated list of documentaries</li></ul><ul id="e45f5cf9-b66b-4f9c-a8c3-b48882e01447" class="bulleted-list"><li><a href="https://ohh.io/">ohh.io - Another movie site</a></li></ul><ul id="55e152d5-50d1-479e-a7ce-194cbc253d92" class="bulleted-list"><li><a href="https://ww2.batflix.org/">ww2.batflix.org</a> - Another tv show / movie site.</li></ul><ul id="a94d27cf-ee51-44c0-b1a1-fc3d1fafc6df" class="bulleted-list"><li><a href="https://neverthink.tv/">neverthink.tv</a> - Random videos.</li></ul><ul id="3a2afaca-c2e4-41fd-9d09-8c807817c21c" class="bulleted-list"><li><a href="https://www.peteyvid.com/">peteyvid.com</a> - Search Videos from 70+ Platforms.</li></ul><ul id="8f4efd24-443a-4fcd-a679-c698cbd9efa8" class="bulleted-list"><li><a href="https://stream.allsprk.tv/">stream.allsprk.tv</a> - Random TV channels or something.</li></ul><ul id="79605d7b-1f7a-4057-9d42-d003913b4a3a" class="bulleted-list"><li><a href="https://lookmovie.io/">lookmovie.io</a> - Another movie site.</li></ul><ul id="bc9b982f-30b7-41bd-acdc-f350c29a43a9" class="bulleted-list"><li><a href="https://www1.ev01.net/">www1.ev01.net</a> - Another movie site.</li></ul><ul id="102ebee2-0b6b-4cd8-8426-5badbb9923cc" class="bulleted-list"><li><a href="https://cafehulu.com/">cafehulu.com</a> - Tv shows and movies</li></ul><ul id="055e82d0-e30b-4eb6-b7e0-71b6fd2542ba" class="bulleted-list"><li><a href="https://www.my90stv.com/">my90stv.com</a> - a 90s tv simulator that lines up youtube videos of shows and commercials to simulate watching random tv channels.</li></ul><ul id="f06f30ec-972f-490c-99cb-5cd83b64454a" class="bulleted-list"><li><a href="https://www.wimp.com/archives">wimp.com/archives</a> - Random videos every day since 2008</li></ul><ul id="73de3092-b7fb-419a-a944-b47897d1420f" class="bulleted-list"><li><a href="https://subsplease.org/">subsplease.org</a> - One stop shop for new anime</li></ul><ul id="d9aa89c9-f8b3-4a3b-b890-72956456457b" class="bulleted-list"><li><a href="http://aqstream.com/jp">aqstream.com/jp</a> - streams live japanese tv</li></ul><ul id="1dea8e81-fd24-4189-b6d6-50ced8da737b" class="bulleted-list"><li><a href="https://animetosho.org/">animetosho.org/</a> - Mirrors latest English subbed anime from Nyaa, Anidex, TokyoTosho, through DDL. Also has NZB for Usenet users.</li></ul><ul id="2c2c3c72-c000-40ee-a23b-6aec14f997c8" class="bulleted-list"><li><a href="https://nibl.co.uk/bots.php">nibl.co.uk/bots.php</a> - Download a bunch of anime through XDCC</li></ul><h3 id="99fc998e-da98-4111-9343-08371859cf8c" class="">Gaymen stuff:</h3><ul id="439984d8-6c5b-4fbd-9eb1-71f518b6b2f5" class="bulleted-list"><li><a href="http://l4cs.jpn.org/gikopoi/flash/gikopoi141_for/flash_gikopoi.html">l4cs.jpn.org/gikopoi/flash/gikopoi141_for/flash_gikopoi.html</a> - Cat Mario game in which you roam around an isometric city repecting Asians.</li></ul><ul id="a42816ca-0a26-4ea7-aa1f-fdf7407295fb" class="bulleted-list"><li><a href="https://gamesmountain.com/">gamesmountain.com</a> - Roms</li></ul><ul id="5a49eecf-2d87-40af-badb-9cceccf0e7fe" class="bulleted-list"><li><a href="https://www.legendsworld.net/main/legendsworld">legendsworld.net/main/legendsworld</a> - Hosts information and download links for hundreds of games in the shooter and adventure genres.</li></ul><ul id="bef3bf97-03bf-4c42-9808-74ad4c5e15c7" class="bulleted-list"><li><a href="https://www.magipack.games/">magipack.games</a> - Full game repacks of old, classic &amp; retro games. Compatible with Windows 10!</li></ul><ul id="67c781e5-3efd-4540-ace7-2900596bdad2" class="bulleted-list"><li><a href="https://deadlockempire.github.io/">deadlockempire.github.io</a> - fun game for the cooders among you who want to learn a bit about multithreading.</li></ul><ul id="b96a27e9-5168-40a8-b0ec-a8fdeaae5f9b" class="bulleted-list"><li><a href="https://bluemaxima.org/flashpoint/">bluemaxima.org/flashpoint/</a> - webgame preservation project</li></ul><ul id="bd505fb7-768c-4174-b573-f84d4e8f9f70" class="bulleted-list"><li><a href="https://candybox2.github.io/">candybox2.github.io/</a> - idle game</li></ul><h3 id="849ba67c-14e7-4818-8bb0-b16d7fed4628" class="">Torrent sites:</h3><ul id="43dac3b3-64d8-444c-9e1e-3c24b42b9787" class="bulleted-list"><li><a href="https://1337x.to/">1337x.to/</a></li></ul><ul id="325cdf5b-d7ab-43a0-b453-1d3a024305ce" class="bulleted-list"><li><a href="https://rarbg.to/">rarbg.to/</a></li></ul><ul id="b11d1963-bf47-4be2-adf2-d2fccea5a005" class="bulleted-list"><li><a href="https://rutracker.net/">rutracker.net/</a></li></ul><ul id="d256bd68-69f2-42c9-91b2-8c1205f0e3c0" class="bulleted-list"><li><a href="https://www.skytorrents.lol/">skytorrents.lol/</a></li></ul><ul id="dbd4d6b9-926f-42fa-98bd-11a788a4024f" class="bulleted-list"><li><a href="https://academictorrents.com/">academictorrents.com/</a></li></ul><ul id="e374cbca-5e13-415d-8ff8-e853d88676e4" class="bulleted-list"><li><a href="https://down.ali213.net/">down.ali213.net/</a></li></ul><ul id="28f7976e-475c-4ce5-a145-72b949cf1a0d" class="bulleted-list"><li><a href="http://anidex.info/">anidex.info/</a></li></ul><ul id="209bc296-a106-4c5e-978f-69cfcbe3dd95" class="bulleted-list"><li><a href="http://bt.etree.org/">bt.etree.org/</a></li></ul><ul id="1cd28ca5-62a1-4f46-9773-e48212298d8f" class="bulleted-list"><li><a href="https://www.cinecalidad.is/">cinecalidad.is/</a></li></ul><ul id="9082eb48-9adf-4aea-8bf7-39356580b2ba" class="bulleted-list"><li><a href="http://www.cpabien.tv/">cpabien.tv/</a></li></ul><ul id="065a335b-a97a-44bd-9b5c-062acaef0242" class="bulleted-list"><li><a href="https://cpasbien.to/">cpasbien.to/</a></li></ul><ul id="08baa45c-f2b4-46d5-bb79-2bb500aa00a6" class="bulleted-list"><li><a href="http://lovetheboxx.be/">lovetheboxx.be/</a></li></ul><ul id="cc921f72-dd85-44dd-87ff-5339b20ceb84" class="bulleted-list"><li><a href="https://share.dmhy.org/">share.dmhy.org/</a></li></ul><ul id="f0519ec5-92c2-491a-a732-300619c9593d" class="bulleted-list"><li><a href="https://www.elitetorrent.com/">elitetorrent.com/</a></li></ul><ul id="5c40a52d-e59f-4cc5-aec6-69b9e30fa1ec" class="bulleted-list"><li><a href="https://www.ettv.tv/">ettv.tv/</a></li></ul><ul id="a25b5edc-2404-48c1-ac1b-3e07fa83da9c" class="bulleted-list"><li><a href="https://extratorrent.si/">extratorrent.si/</a></li></ul><ul id="511d0ede-fe93-4acb-a4b3-583b3e41e950" class="bulleted-list"><li><a href="https://horriblesubs.info/">horriblesubs.info/</a></li></ul><ul id="4dba4829-c733-498a-9f3a-12f928aecfcf" class="bulleted-list"><li><a href="https://ilcorsaroblu.org/">ilcorsaroblu.org/</a></li></ul><ul id="2f640ea9-9e3d-406e-a8fc-794dcdc63ec7" class="bulleted-list"><li><a href="https://ilcorsaronero.gratis/">ilcorsaronero.gratis/</a></li></ul><ul id="93cd3920-9de9-41c7-ab06-d246a3823622" class="bulleted-list"><li><a href="https://corsaro.red/">corsaro.red/</a></li></ul><ul id="2d783633-2023-41ce-98d8-472036303f04" class="bulleted-list"><li><a href="https://kickass-cr.online/">kickass-cr.online/</a></li></ul><ul id="86487d84-32c4-4eb6-84f1-3b7134f04e9c" class="bulleted-list"><li><a href="https://linuxtracker.org/">linuxtracker.org/</a></li></ul><ul id="01819b1f-778c-47a5-966e-a6abcfe6f364" class="bulleted-list"><li><a href="https://www.magnetdl.com/">magnetdl.com/</a></li></ul><ul id="9a4c420b-04a9-42f4-bb19-c8f626118bcd" class="bulleted-list"><li><a href="https://www.mejortorrents.net/">mejortorrents.net/</a></li></ul><ul id="cc2511d3-cb54-4d2e-8ef9-5b39c20be855" class="bulleted-list"><li><a href="https://nyaa.net/">nyaa.net/</a></li></ul><ul id="b7145543-31ae-48e6-80d2-e41c6db929a9" class="bulleted-list"><li><a href="https://nyaa.si/">nyaa.si/</a></li></ul><ul id="8a9db465-f83b-4733-8d21-48dddaf0769a" class="bulleted-list"><li><a href="https://rawkbawx.rocks/">rawkbawx.rocks/</a></li></ul><ul id="b9b55ec0-1376-41ed-99eb-e5d5cc0c971a" class="bulleted-list"><li><a href="http://rutor.info/">rutor.info/</a></li></ul><ul id="cb81cba1-cbe8-4acf-bada-86c79a0b028f" class="bulleted-list"><li><a href="https://www.skytorrents.lol/">skytorrents.lol/</a></li></ul><ul id="eee1d49c-9826-457f-83f4-a6905fe9b43e" class="bulleted-list"><li><a href="https://small-games.info/">small-games.info/</a></li></ul><ul id="ae80ed8e-a906-4aff-bec6-6c9df914618f" class="bulleted-list"><li><a href="https://snowfl.com/">snowfl.com/</a></li></ul><ul id="9ebf9a92-5218-4ec6-bd80-cc6324dc0d45" class="bulleted-list"><li><a href="https://solotorrent.net/">solotorrent.net/</a></li></ul><ul id="836ab192-8ed6-4f9e-a579-58071646f086" class="bulleted-list"><li><a href="https://www.subtorrents.nl/">subtorrents.nl/</a></li></ul><ul id="8e95a916-9b2c-4bf5-8e73-f95b47877fef" class="bulleted-list"><li><a href="https://sukebei.nyaa.si/">sukebei.nyaa.si/</a></li></ul><ul id="fd48661b-0cbf-49d2-be13-933d4c269b26" class="bulleted-list"><li><a href="https://sukebei.nyaa.net/">sukebei.nyaa.net/</a></li></ul><ul id="664c15d5-6896-46a9-a492-dd58a2e49a0b" class="bulleted-list"><li><a href="https://www.tokyotosho.info/index.php">tokyotosho.info/index.php</a></li></ul><ul id="83e8db3b-e0e3-41fa-9244-ab3ca093c62d" class="bulleted-list"><li><a href="https://www.oxtorrent.cc/">oxtorrent.cc/</a></li></ul><ul id="adb1c30f-0cd3-4719-a60b-5514aec392dd" class="bulleted-list"><li><a href="https://www.torrentfunk.com/">torrentfunk.com/</a></li></ul><ul id="8de859bc-1be9-4b92-9a1f-2a3146f2201b" class="bulleted-list"><li><a href="https://torrentgalaxy.to/">torrentgalaxy.to/</a></li></ul><ul id="73fcf6e1-5feb-46ca-beb2-b9e7aab7fcca" class="bulleted-list"><li><a href="https://torrentproject2.com/">torrentproject2.com/</a></li></ul><ul id="a6851392-a393-4574-b857-c1feded93210" class="bulleted-list"><li><a href="http://uniondht.org/">uniondht.org/</a></li></ul><ul id="19f1e608-7280-454e-84ed-5b70ae094daf" class="bulleted-list"><li><a href="https://yourbittorrent.com/">yourbittorrent.com/</a></li></ul><ul id="5bacb8d9-c1d8-4e3d-b262-449baf52c432" class="bulleted-list"><li><a href="https://yts.mx/">yts.mx/</a></li></ul><ul id="787df6c2-f629-4374-af2e-b3f993de583c" class="bulleted-list"><li><a href="https://dark-libria.it/">dark-libria.it/</a></li></ul><ul id="b0323259-650f-414d-b55d-e14b7221dfaf" class="bulleted-list"><li><a href="https://nyaa.net/">nyaa.net/</a> - Nyaa Torrents (non-cartel version. Made by a fellow /g/entooman when the original Nyaa went down)</li></ul><ul id="b7f79797-b189-45ff-8d26-61e3c90d1633" class="bulleted-list"><li><a href="https://www.acgnx.se/">acgnx.se/</a> - Project AcgnX Torrent (anime tracker)</li></ul><ul id="28caf065-d445-4d51-80ba-bfb97f696704" class="bulleted-list"><li><a href="https://www.anix.moe/">anix.moe/</a> - AniX.Moe (the “Sukebei” of AcgnX)</li></ul><ul id="884039f5-897e-4ee2-be49-31fc1da53ac1" class="bulleted-list"><li><a href="https://www.anirena.com/">anirena.com/</a> - AniRena (anime tracker)</li></ul><ul id="2f889aca-451a-4399-902f-307afc16204e" class="bulleted-list"><li><a href="http://kinozal.tv/">kinozal.tv/</a> - Kinozal (Russian torrent tracker with a focus on films)</li></ul><ul id="593a3122-d443-47e2-9928-984c43a2e3c6" class="bulleted-list"><li><a href="https://nnmclub.to/">nnmclub.to/</a> - NNM-Club (Russian tracker)</li></ul><ul id="06b64314-3d37-4ebd-98fb-54bf2c94b082" class="bulleted-list"><li><a href="http://rustorka.com/">rustorka.com/</a> - Rustorka (Russian tracker)</li></ul><ul id="cf2793ec-a95e-4b55-82fe-203983dbf7ba" class="bulleted-list"><li><a href="https://forum.touki.ru/open.php">forum.touki.ru/open.php</a> - Touki (Russian anime tracker)</li></ul><ul id="d5d85cc6-568a-4207-99aa-ba57ba8aa6fd" class="bulleted-list"><li><a href="http://www.legittorrents.info/">legittorrents.info/</a> - Legit Torrents (100% legal torrents)</li></ul><ul id="5bcd1c74-317b-44ae-858f-c6f5c71ccfcf" class="bulleted-list"><li><a href="http://www.publicdomaintorrents.info/">publicdomaintorrents.info/</a> - Public Domain Movie Torrents</li></ul><ul id="cedfd5d7-9728-4569-810f-3cc3f593a5c0" class="bulleted-list"><li><a href="https://bt.etree.org/">bt.etree.org/</a> - <a href="http://etree.org/">etree.org</a> Community Bittorrent Tracker (free live convert recordings)</li></ul><ul id="d285552b-1e65-4c73-86c1-ec61d2e1b91b" class="bulleted-list"><li><a href="https://www.concen.org/torrents">concen.org/torrents</a> - ConCen (tracker with lots of /pol/ and /x/-tier content)</li></ul><h3 id="b0c10033-5969-4cef-b52a-e4a7280cd23a" class="">Uncategorized sites:</h3><ul id="279f3830-f2c4-4550-85b4-e7d595fcf6c9" class="bulleted-list"><li><a href="https://encode.su/forum.php">encode.su/forum.php</a> - Encode’s Forum (one of the best websites to talk about data compression)</li></ul><ul id="2cbe82f0-63d5-485e-a7f3-975013ade6c3" class="bulleted-list"><li><a href="https://krinkels.org/">krinkels.org/</a> - Krinkels (where game repackers get and share their compression tools)</li></ul><ul id="0d606bab-b70f-45b5-aa97-47bc760c4d68" class="bulleted-list"><li><a href="http://www.data-compression.info/index.html">data-compression.info/index.html</a> - The Data Compression Resource</li></ul><ul id="0c7e12ac-1211-44ab-997e-4f5a2091cda4" class="bulleted-list"><li><a href="https://www.compression.ru/index_en.htm">compression.ru/index_en.htm</a> - <a href="http://compression.ru/">Compression.ru</a> (Russian data compression website)</li></ul><ul id="e8aafd9c-94a5-4fc6-bced-74451f9977f9" class="bulleted-list"><li><a href="https://ethw.org/History_of_Lossless_Data_Compression_Algorithms">ethw.org/History_of_Lossless_Data_Compression_Algorithms</a> - History of Lossless Data Compression Algorithms</li></ul><ul id="60bc0a16-c307-4866-a3b8-6c0d1572d699" class="bulleted-list"><li><a href="https://quixdb.github.io/squash-benchmark/">quixdb.github.io/squash-benchmark/</a> - Squash Compression Benchmark</li></ul><ul id="fe56e59c-cd17-40f9-ab44-90a4d0101066" class="bulleted-list"><li><a href="http://mattmahoney.net/dc/text.html">mattmahoney.net/dc/text.html</a> - (Large Text Compression Benchmark)</li></ul><ul id="b306adc8-aa27-440f-965c-55c0faea33bc" class="bulleted-list"><li><a href="http://mattmahoney.net/dc/10gb.html">mattmahoney.net/dc/10gb.html</a> - (10 GB Compression Benchmark)</li></ul><ul id="e1af5eb2-9c2d-429f-8d3c-835f61f71daa" class="bulleted-list"><li><a href="http://mattmahoney.net/dc/uiq/index.html">mattmahoney.net/dc/uiq/index.html</a> - (Generic Compression Benchmark)</li></ul><ul id="057e5d86-25d7-46b9-94a9-e368022a8e3e" class="bulleted-list"><li><a href="https://www.maximumcompression.com/">maximumcompression.com/</a> - Maximum Compression (benchmark of various compression tools last updated in 2011)</li></ul><ul id="f8a0a8ec-2e36-4487-b8fa-20d9aa30683e" class="bulleted-list"><li><a href="https://github.com/inikep/lzbench">github.com/inikep/lzbench</a> - lzbench (in-memory benchmark of open source LZ77/LZSS/LZMA compressors)</li></ul><ul id="e319cc30-b290-423a-bd73-1918e35219b8" class="bulleted-list"><li><a href="https://github.com/powturbo/TurboBench">github.com/powturbo/TurboBench</a> - TurboBench (benchmark for LZ77, BWT, context mixing and entropy coders)</li></ul><ul id="02939293-2191-4816-b9ef-8b6a730ca415" class="bulleted-list"><li><a href="https://cbloomrants.blogspot.com/">cbloomrants.blogspot.com/</a> - cbloom rants (Charles Bloom’s blog)</li></ul><ul id="fe1f6d1d-bb05-4a44-983b-c6edabd24954" class="bulleted-list"><li><a href="https://marknelson.us/">marknelson.us/</a> - Mark Nelson’s website</li></ul><ul id="c5397dd9-973c-45cd-a780-0c7759abd3f8" class="bulleted-list"><li><a href="http://www.planetsuzy.org/">planetsuzy.org/</a> - PlanetSuzy (well organized, but the search tool not only sucks, it also requires solving a reCAPTCHA)</li></ul><h2 id="7b74258c-d44f-4163-9877-4fd5e9c1bc1d" class="">Source: <a href="https://goodsites.tech"><code>goodsites.tech</code></a></h2><p id="5b04b257-aad3-4004-aa00-172343421373" class="">Copied From: <a href="https://onehack.us/t/good-sites-awesome-collection-of-useful-websites/167476">https://onehack.us/t/good-sites-awesome-collection-of-useful-websites/167476</a></p><p id="86cfc127-e6ad-4301-b4a5-a834c7766869" class="">
+    </p></div></article></body></html>
